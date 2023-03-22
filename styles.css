@@ -1,6 +1,28 @@
 body {
   background-image: url('/header-background-mobile.png');
 }
+
 header {
-  
+  display: flex;
+  height: 7vh;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  display: flex;
+}
+.union img{
+  width: 100%;
+  height: auto;
+}
+@supports(object-fit: cover){
+  .union img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
 }
