@@ -1,3 +1,6 @@
 body {
-  display: flex;
+  background-image: url('/header-background-mobile.png');
+}
+header {
+  
 }
