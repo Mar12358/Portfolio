@@ -15,9 +15,10 @@ header { /*HEADER CONTAINER*/
 }
 img {
   max-width: 100%;
-  height: auto;
+
   margin-left: 0px;
   margin-right: 0px;
+  
 }
 .menu {
  
@@ -89,6 +90,14 @@ a {
 
 .social-links {
   display: flex;
+  width: 45%;
+  direction: flex;
+  
+}
+
+.social {
+  margin: 1%;
+  align-content: space-around;
 }
 
 .text_logo {
