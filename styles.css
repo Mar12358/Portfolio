@@ -2,9 +2,14 @@ body {
   background-image: url('/header-background-mobile.png');
 }
 
-header {
+header { /*CONTAINER*/
   display: flex;
   height: 7vh;
+  justify-content: space-between;
+  
+}
+.logo, .nav-bar {
+  border: 1px solid red
 }
 
 .app-wrap {
@@ -15,6 +20,13 @@ header {
 .social-links {
   display: flex;
 }
+
+.text_logo {
+  margin: 4px;
+  ;
+}
+
+/*
 .union img{
   width: 100%;
   height: auto;
@@ -26,3 +38,4 @@ header {
     object-position: center center;
   }
 }
+*/
