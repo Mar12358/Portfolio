@@ -1,0 +1,119 @@
+body {
+  background-image: url('header-shapes mobile@2x.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header { /* HEADER CONTAINER */
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  margin-right: 6.4%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20%;
+}
+
+.menu {
+  margin-top: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
+  color: #6070ff;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 26.666666%;
+  margin: 4px;
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  width: 10.666666%;
+  justify-content: center;
+}
+
+.logo,
+.nav-bar {
+  justify-content: center;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.salute {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  line-height: 52px;
+}
+
+.description,
+.salute,
+.lets_connect,
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #344563;
+}
+
+.lets_connect {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7f8cff;
+}
+
+li {
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 14px;
+  gap: 3px;
+  padding-inline-start: 1px;
+  width: 190px;
+}
+
+.social {
+  margin-bottom: 17px;
+  margin-left: 0;
+  max-width: 50%;
+}
+
+.content { /* CONTENT CONTAINER */
+  height: 604px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content > * {
+  margin-left: 6.4%;
+  margin-right: 6.4%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
