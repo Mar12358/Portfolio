@@ -58,9 +58,6 @@ header { /* HEADER CONTAINER */
 }
 
 .app-wrap {
-  
-  
- 
   display: flex;
   flex-direction: column;
 }
@@ -127,4 +124,20 @@ li {
   margin-right: 6.4%;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+#work {
+  display: grid;
+  grid-template-rows: repeat(4, 652px);
+  
+}
+#work > * {
+  border: 1px solid #344563;
+}
+
+#about_my_self {
+  display: flex;
+  height: 1062px;
+  border: 1px solid #184eaa;
+  
 }
