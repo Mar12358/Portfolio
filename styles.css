@@ -2,7 +2,7 @@ body {
  background-color: #f1f1fc;
 }
 
-.welcome {
+#welcome {
 
   background-color: white;
   background-image: url('header-shapes mobile@2x.svg');
