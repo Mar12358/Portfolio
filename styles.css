@@ -24,7 +24,6 @@ header { /* HEADER CONTAINER */
   margin-top: 12px;
   width: 24px;
   height: 24px;
-  
 }
 
 .logo {
@@ -36,7 +35,7 @@ header { /* HEADER CONTAINER */
   text-align: center;
   width: 26.666666%;
   margin: 4px;
-  text-decoration: NONE;
+  text-decoration: none;
 }
 
 .nav-bar {
@@ -95,18 +94,14 @@ li {
   justify-content: left;
   margin-left: 14px;
   gap: 3px;
-  padding-inline-start: 0px;
+  padding-inline-start: 1px;
   width: 190px;
 }
 
-.social { 
+.social {
   margin-bottom: 17px;
   margin-left: 0;
   max-width: 50%;
-}
-
-.text_logo {
- 
 }
 
 .content { /* CONTENT CONTAINER */
