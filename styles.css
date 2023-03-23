@@ -13,16 +13,18 @@ header { /* HEADER CONTAINER */
 
 .nav {
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   margin: 20%;
 }
 
-img {
-  max-width: 100%;
-}
-
 .menu {
-  align-content: center;
-  justify-content: center;
+  margin-top: 12px;
+  width: 24px;
+  height: 24px;
+  
 }
 
 .logo {
@@ -33,6 +35,8 @@ img {
   align-items: center;
   text-align: center;
   width: 26.666666%;
+  margin: 4px;
+  text-decoration: NONE;
 }
 
 .nav-bar {
@@ -81,19 +85,28 @@ img {
   color: #7f8cff;
 }
 
-.social-links {
-  display: flex;
-  width: 45%;
-  direction: flex;
+li {
+  list-style: none;
 }
 
-.social {
-  margin: 1%;
-  align-content: space-around;
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 14px;
+  gap: 3px;
+  padding-inline-start: 0px;
+  width: 190px;
+}
+
+.social { 
+  margin-bottom: 17px;
+  margin-left: 0;
+  max-width: 50%;
 }
 
 .text_logo {
-  margin: 4px;
+ 
 }
 
 .content { /* CONTENT CONTAINER */
