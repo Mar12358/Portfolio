@@ -6,7 +6,7 @@ body {
 
 header { /* HEADER CONTAINER */
   display: flex;
-  height: 7vh;
+  height: 48px;
   justify-content: space-between;
   margin-right: 6.4%;
 }
@@ -21,25 +21,18 @@ img {
 }
 
 .menu {
-  /* border: 1px solid red; */
   align-content: center;
   justify-content: center;
 }
 
 .logo {
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   display: flex;
   align-items: center;
   text-align: center;
   width: 26.666666%;
-}
-
-a {
-  /* border: 1px solid red; */
 }
 
 .nav-bar {
@@ -50,7 +43,6 @@ a {
 
 .logo,
 .nav-bar {
-  /* border: 1px solid red; */
   justify-content: center;
 }
 
@@ -60,17 +52,22 @@ a {
 }
 
 .salute {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+  color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   line-height: 52px;
 }
 
-.description {
+.description,
+.salute,
+.lets_connect,
+.logo {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+}
+
+.description {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -78,8 +75,6 @@ a {
 }
 
 .lets_connect {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -102,8 +97,7 @@ a {
 }
 
 .content { /* CONTENT CONTAINER */
-  /* border: 1px solid red; */
-  height: 93vh;
+  height: 604px;
   display: flex;
   flex-direction: column;
   justify-content: center;
