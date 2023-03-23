@@ -1,9 +1,17 @@
 body {
+ background-color: #f1f1fc;
+}
+
+.welcome {
+
+  background-color: white;
   background-image: url('header-shapes mobile@2x.svg');
   background-repeat: no-repeat;
   background-position: center;
+  object-fit: cover;
+  border-bottom-left-radius: 15%;
+  
 }
-
 header { /* HEADER CONTAINER */
   display: flex;
   height: 48px;
@@ -50,6 +58,9 @@ header { /* HEADER CONTAINER */
 }
 
 .app-wrap {
+  
+  
+ 
   display: flex;
   flex-direction: column;
 }
