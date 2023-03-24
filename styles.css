@@ -10,8 +10,7 @@ body {
 }
 
 #welcome,
-.about_my_self,
-.about_my_self2 {
+.about_my_self {
   background-color: white;
   background-position: center;
   object-fit: cover;
@@ -251,6 +250,8 @@ li {
 .about_my_self {
   border-top-right-radius: 15%;
   margin-top: 114px;
+  padding-top: 114px;
+  padding-bottom: 100px;
 }
 
 .content_about_self {
@@ -288,13 +289,12 @@ li {
 
 .list_info > * {
   font-weight: 600;
-font-size: 20px;
-  /*margin: 0;*/
+  font-size: 20px;
 }
 
 .list_lang {
   display: flex;
-  gap: 10px ;
+  gap: 10px;
   border-radius: 8px;
   background-color: #f7f7f9;
   align-items: center;
