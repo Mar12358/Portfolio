@@ -174,7 +174,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid #6070ff;
 }
 
 .card_bottom > * {
