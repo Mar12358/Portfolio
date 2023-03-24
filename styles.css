@@ -1,17 +1,16 @@
 body {
- background-color: #f1f1fc;
+  background-color: #f1f1fc;
 }
 
 #welcome {
-
   background-color: white;
   background-image: url('header-shapes mobile@2x.svg');
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
   border-bottom-left-radius: 15%;
-  
 }
+
 header { /* HEADER CONTAINER */
   display: flex;
   height: 48px;
@@ -132,17 +131,12 @@ li {
 #work {
   display: grid;
   grid-template-rows: repeat(4, 652px);
-  
-}
-#work > * {
-  
 }
 
 #about_my_self {
   display: flex;
   height: 1062px;
   border: 1px solid #184eaa;
-  
 }
 
 .card {
@@ -156,20 +150,20 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
+
 .card > * {
   margin-left: 14px;
   margin-right: 14px;
 }
+
 .card_bottom {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   justify-content: space-between;
-
-
 }
+
 .card_ul {
   display: flex;
   align-items: center;
@@ -178,13 +172,14 @@ li {
   width: 75%;
   font-size: 12px;
 }
+
 .categories {
   display: flex;
   width: 213px;
   padding-inline-start: 1px;
   justify-content: space-between;
-  
 }
+
 .categories > * {
   background-color: #ebebff;
   border-radius: 8px;
@@ -195,14 +190,14 @@ li {
   height: 24px;
   display: flex;
   align-items: center;
-  
 }
+
 .see_project_button {
   display: flex;
   text-decoration: none;
   font-size: 17px;
   border-radius: 8px;
-  border: 1px solid #6070ff; 
+  border: 1px solid #6070ff;
   width: 126px;
   height: 48px;
   align-items: center;
