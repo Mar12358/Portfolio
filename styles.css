@@ -73,7 +73,10 @@ header { /* HEADER CONTAINER */
 .description,
 .salute,
 .lets_connect,
-.logo {
+.logo,
+p,
+a,
+h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -132,7 +135,7 @@ li {
   
 }
 #work > * {
-  border: 1px solid #344563;
+  
 }
 
 #about_my_self {
@@ -140,4 +143,68 @@ li {
   height: 1062px;
   border: 1px solid #184eaa;
   
+}
+
+.card {
+  background-color: white;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 80px;
+  height: 572px;
+  border-radius: 5%;
+  border: 1px solid #dfe1e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.card > * {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.card_bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: space-between;
+
+
+}
+.card_ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 1px;
+  width: 75%;
+  font-size: 12px;
+}
+.categories {
+  display: flex;
+  width: 213px;
+  padding-inline-start: 1px;
+  justify-content: space-between;
+  
+}
+.categories > * {
+  background-color: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  
+}
+.see_project_button {
+  display: flex;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 1px solid #6070ff; 
+  width: 126px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
 }
