@@ -3,12 +3,18 @@ body {
 }
 
 #welcome {
-  background-color: white;
   background-image: url('header-shapes mobile@2x.svg');
   background-repeat: no-repeat;
+  border-bottom-left-radius: 15%;
+  background-position: center;
+}
+
+#welcome,
+.about_my_self,
+.about_my_self2 {
+  background-color: white;
   background-position: center;
   object-fit: cover;
-  border-bottom-left-radius: 15%;
 }
 
 header { /* HEADER CONTAINER */
@@ -80,13 +86,6 @@ h1 {
   font-style: normal;
 }
 
-.description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #344563;
-}
-
 .lets_connect {
   font-weight: 500;
   font-size: 16px;
@@ -98,14 +97,24 @@ li {
   list-style: none;
 }
 
-.icons {
+.icons,
+.card_ul,
+.categories {
+  padding-inline-start: 1px;
+}
+
+.icons,
+.icons_padding {
   display: flex;
   align-items: center;
   justify-content: left;
   margin-left: 14px;
   gap: 3px;
-  padding-inline-start: 1px;
   width: 190px;
+}
+
+.icons_padding {
+  padding-inline-start: 15px;
 }
 
 .social {
@@ -133,13 +142,10 @@ li {
   grid-template-rows: repeat(4, 652px);
 }
 
-#about_my_self {
-  display: flex;
-  height: 1062px;
-  border: 1px solid #184eaa;
-}
-
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: white;
   margin-left: 24px;
   margin-right: 24px;
@@ -147,9 +153,6 @@ li {
   height: 572px;
   border-radius: 5%;
   border: 1px solid #dfe1e6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .card > * {
@@ -160,24 +163,52 @@ li {
 .card_bottom {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  justify-content: space-between;
+  justify-content: center;
+  border: 1px solid #6070ff;
+}
+
+.card_bottom > * {
+  flex: 1 1 auto;
+}
+
+.card_title {
+  font-size: 32px;
+  border: 1px solid #6070ff;
 }
 
 .card_ul {
+  border: 1px solid #6070ff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline-start: 1px;
   width: 75%;
   font-size: 12px;
+}
+
+.canopy,
+.text_li {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.text_li {
+  color: #7a869a;
+}
+
+.description {
+  border: 1px solid #6070ff;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #344563;
 }
 
 .categories {
   display: flex;
   width: 213px;
-  padding-inline-start: 1px;
   justify-content: space-between;
+  border: 1px solid #6070ff;
 }
 
 .categories > * {
@@ -185,21 +216,61 @@ li {
   border-radius: 8px;
   color: #6070ff;
   font-size: 12px;
+  font-weight: 500;
   padding-left: 10px;
   padding-right: 10px;
   height: 24px;
+  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
 }
 
-.see_project_button {
+.see_project_button,
+.get_resume_button {
+  color: #396df2;
   display: flex;
   text-decoration: none;
   font-size: 17px;
+  font-weight: 600;
   border-radius: 8px;
   border: 1px solid #6070ff;
-  width: 126px;
   height: 48px;
   align-items: center;
   justify-content: center;
+}
+
+.get_resume_button {
+  width: 162px;
+  margin-bottom: 15px;
+}
+
+.see_project_button {
+  width: 126px;
+}
+
+.about_my_self {
+  border-top-right-radius: 15%;
+  margin-top: 114px;
+  height: 572px;
+}
+
+.content_about_self {
+  gap: 10px;
+}
+
+#twitter_icon {
+  order: 1;
+}
+
+#hand_icon,
+#linkedin_icon {
+  order: 0;
+}
+
+#git_icon {
+  order: -1;
+}
+
+#m_icon {
+  order: 2;
 }
