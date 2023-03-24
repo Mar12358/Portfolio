@@ -15,6 +15,7 @@ body {
   background-color: white;
   background-position: center;
   object-fit: cover;
+  border: 1px solid white;
 }
 
 header { /* HEADER CONTAINER */
@@ -123,11 +124,21 @@ li {
   max-width: 50%;
 }
 
-.content { /* CONTENT CONTAINER */
+.welcome_content,
+.content_about_self {
   height: 604px;
+}
+
+.content { /* CONTENT CONTAINER */
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.content_about_self2 {
+  height: 464px;
+  display: flex;
+  flex-direction: column;
 }
 
 .content > * {
@@ -241,7 +252,6 @@ li {
 
 .get_resume_button {
   width: 162px;
-  margin-bottom: 15px;
 }
 
 .see_project_button {
@@ -251,7 +261,7 @@ li {
 .about_my_self {
   border-top-right-radius: 15%;
   margin-top: 114px;
-  height: 572px;
+  height: 1062px;
 }
 
 .content_about_self {
@@ -274,3 +284,19 @@ li {
 #m_icon {
   order: 2;
 }
+
+/*
+.list_lang > * {
+  background-color: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 24px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+}
+*/
