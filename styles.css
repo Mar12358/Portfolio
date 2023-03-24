@@ -174,7 +174,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
   border: 1px solid #6070ff;
 }
 
@@ -189,11 +188,9 @@ li {
 
 .card_title {
   font-size: 32px;
-  border: 1px solid #6070ff;
 }
 
-.card_ul {
-  border: 1px solid #6070ff;
+.card_ul {  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -213,7 +210,6 @@ li {
 }
 
 .description {
-  border: 1px solid #6070ff;
   font-weight: 400px;
   font-size: 16px;
   line-height: 150%;
@@ -224,7 +220,6 @@ li {
   display: flex;
   width: 213px;
   justify-content: space-between;
-  border: 1px solid #6070ff;
 }
 
 .categories > * {
