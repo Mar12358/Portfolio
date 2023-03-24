@@ -82,7 +82,8 @@ header { /* HEADER CONTAINER */
 .logo,
 p,
 a,
-h1 {
+h1,
+h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -124,8 +125,7 @@ li {
   max-width: 50%;
 }
 
-.welcome_content,
-.content_about_self {
+.welcome_content {
   height: 604px;
 }
 
@@ -136,7 +136,6 @@ li {
 }
 
 .content_about_self2 {
-  height: 464px;
   display: flex;
   flex-direction: column;
 }
@@ -175,7 +174,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+ 
   border: 1px solid #6070ff;
 }
 
@@ -267,7 +266,7 @@ li {
 .about_my_self {
   border-top-right-radius: 15%;
   margin-top: 114px;
-  height: 1062px;
+  
 }
 
 .content_about_self {
