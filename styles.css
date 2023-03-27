@@ -213,9 +213,13 @@ li:hover {
 }
 
 .categories {
-  display: flex;
   width: 213px;
   justify-content: space-between;
+}
+
+.floats {
+  float: left;
+  margin-left: 3%;
 }
 
 .categories > * {
