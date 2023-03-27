@@ -3,7 +3,7 @@ body {
 }
 
 #welcome {
-  background-image: url('header-shapes mobile@2x.svg');
+  background-image: url("header-shapes mobile@2x.svg");
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
   background-position: center;
@@ -17,7 +17,8 @@ body {
   border: 1px solid white;
 }
 
-header { /* HEADER CONTAINER */
+header {
+  /* HEADER CONTAINER */
   display: flex;
   height: 48px;
   justify-content: space-between;
@@ -83,7 +84,7 @@ p,
 a,
 h1,
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -96,6 +97,11 @@ h2 {
 
 li {
   list-style: none;
+}
+li:hover {
+  background-color: #6070ff;
+  color: white;
+  border-color: #396df2;
 }
 
 .icons,
@@ -128,7 +134,8 @@ li {
   height: 604px;
 }
 
-.content { /* CONTENT CONTAINER */
+.content {
+  /* CONTENT CONTAINER */
   display: flex;
   flex-direction: column;
   justify-content: center;
