@@ -3,7 +3,7 @@ body {
 }
 
 #welcome {
-  background-image: url('header-shapes mobile@2x.svg');
+  background-image: url("header-shapes mobile@2x.svg");
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
   background-position: center;
@@ -17,7 +17,8 @@ body {
   border: 1px solid white;
 }
 
-header { /* HEADER CONTAINER */
+header {
+  /* HEADER CONTAINER */
   display: flex;
   height: 48px;
   justify-content: space-between;
@@ -82,8 +83,13 @@ header { /* HEADER CONTAINER */
 p,
 a,
 h1,
-h2 {
-  font-family: 'Poppins', sans-serif;
+h2,
+textarea::placeholder,
+input::placeholder,
+textarea,
+input[type="text"],
+input[type="email"] {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -128,7 +134,8 @@ li {
   height: 604px;
 }
 
-.content { /* CONTENT CONTAINER */
+.content {
+  /* CONTENT CONTAINER */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,7 +233,8 @@ li {
 }
 
 .see_project_button,
-.get_resume_button {
+.get_resume_button,
+.submit_button {
   color: #396df2;
   display: flex;
   text-decoration: none;
@@ -239,6 +247,11 @@ li {
   justify-content: center;
 }
 
+.submit_button {
+  width: 142px;
+  margin-top: 20px;
+}
+
 .get_resume_button {
   width: 162px;
 }
@@ -248,7 +261,7 @@ li {
 }
 
 .about_my_self {
-  border-top-right-radius: 15%;
+  border-top-right-radius: 50px;
   margin-top: 114px;
   padding-top: 114px;
   padding-bottom: 100px;
@@ -306,4 +319,79 @@ li {
   color: #253858;
   font-size: 15px;
   font-weight: 500;
+}
+
+.contact {
+  padding-top: 60px;
+  background-image: url(contact_bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 780px;
+  background-color: #6070ff;
+  border-top-left-radius: 50px;
+}
+
+.form_header {
+  padding-left: 20px;
+  width: 87%;
+  text-align: center;
+}
+
+.form_header h2 {
+  color: #ebebff;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.form_header p {
+  color: #ebebff;
+  width: 327px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding-left: 16px;
+  font-size: 17px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b3bac5;
+  font-size: 15px;
+}
+
+textarea {
+  border: 2px solid pink;
+  height: 170px;
+  padding-top: 15px;
+}
+
+input {
+  height: 48px;
+}
+
+input,
+textarea {
+  background: #fff;
+  width: 90%;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-top: 18px;
+}
+
+.submit_button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.submit_button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+#form_ul {
+  padding-left: 24px;
 }
