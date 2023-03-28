@@ -234,7 +234,8 @@ li {
 }
 
 .see_project_button,
-.get_resume_button {
+.get_resume_button,
+.submit_button {
   color: #396df2;
   display: flex;
   text-decoration: none;
@@ -246,6 +247,10 @@ li {
   align-items: center;
   justify-content: center;
   padding-left: ;
+}
+
+.submit_button {
+  width: 142px;
 }
 
 .get_resume_button {
