@@ -249,6 +249,7 @@ li {
 
 .submit_button {
   width: 142px;
+  margin-top: 20px;
 }
 
 .get_resume_button {
@@ -329,26 +330,26 @@ li {
   background-color: #6070ff;
   border-top-left-radius: 50px;
 }
+
 .form_header {
- /* margin-left: 10%;*/
- 
- padding-left: 20px;
- width: 87%;
- text-align: center;
+  padding-left: 20px;
+  width: 87%;
+  text-align: center;
 }
+
 .form_header h2 {
   color: #ebebff;
-  
   font-weight: 700;
   font-size: 40px;
-   
 }
+
 .form_header p {
   color: #ebebff;
   width: 327px;
   font-weight: 400;
   font-size: 20px;
 }
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -365,35 +366,30 @@ textarea::placeholder {
 textarea {
   border: 2px solid pink;
   height: 170px;
+  padding-top: 15px;
 }
 
 input {
   height: 48px;
 }
 
-textarea {
-  padding-top: 15px;
-}
-
 input,
 textarea {
-  background: #ffffff;
+  background: #fff;
   width: 90%;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-top: 18px;
 }
 
-.submit_button {
-  margin-top: 20px;
-}
 .submit_button:hover {
   background-color: #396df2;
-  color: #ffffff;
+  color: #fff;
 }
+
 .submit_button:active {
   background-color: #2230d2;
-  color: #ffffff;
+  color: #fff;
 }
 
 #form_ul {
