@@ -1,10 +1,13 @@
+
 body {
   background-color: #f1f1fc;
 }
 
 #welcome {
+  
   background-image: url('header-shapes mobile@2x.svg');
   background-repeat: no-repeat;
+
   border-bottom-left-radius: 15%;
   background-position: center;
 }
@@ -82,7 +85,12 @@ header { /* HEADER CONTAINER */
 p,
 a,
 h1,
-h2 {
+h2,
+textarea::placeholder,
+input::placeholder,
+textarea,
+input[type="text"],
+input[type="email"] {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
@@ -237,6 +245,7 @@ li {
   height: 48px;
   align-items: center;
   justify-content: center;
+  padding-left: ;
 }
 
 .get_resume_button {
@@ -248,7 +257,7 @@ li {
 }
 
 .about_my_self {
-  border-top-right-radius: 15%;
+  border-top-right-radius: 50px;
   margin-top: 114px;
   padding-top: 114px;
   padding-bottom: 100px;
