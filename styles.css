@@ -321,22 +321,33 @@ li {
 }
 
 .contact {
+  padding-top: 60px;
   background-image: url(contact_bg.svg);
   background-repeat: no-repeat;
   background-position: right;
   height: 780px;
   background-color: #6070ff;
-  border-top-left-radius: 45px;
+  border-top-left-radius: 50px;
 }
 .form_header {
-  margin-left: 10%;
+ /* margin-left: 10%;*/
+ 
+ padding-left: 20px;
+ width: 87%;
+ text-align: center;
 }
 .form_header h2 {
-  padding-top: 50px;
+  color: #ebebff;
+  
+  font-weight: 700;
+  font-size: 40px;
+   
 }
 .form_header p {
-  padding-top: 10px;
-  width: 50%;
+  color: #ebebff;
+  width: 327px;
+  font-weight: 400;
+  font-size: 20px;
 }
 input[type="text"],
 input[type="email"],
@@ -352,6 +363,7 @@ textarea::placeholder {
 }
 
 textarea {
+  border: 2px solid pink;
   height: 170px;
 }
 
@@ -385,5 +397,5 @@ textarea {
 }
 
 #form_ul {
-  padding: 24px;
+  padding-left: 24px;
 }
