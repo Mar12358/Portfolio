@@ -1,10 +1,9 @@
-
 body {
   background-color: #f1f1fc;
 }
 
 #welcome {
-  background-image: url('header-shapes mobile@2x.svg');
+  background-image: url("header-shapes mobile@2x.svg");
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
   background-position: center;
@@ -18,7 +17,8 @@ body {
   border: 1px solid white;
 }
 
-header { /* HEADER CONTAINER */
+header {
+  /* HEADER CONTAINER */
   display: flex;
   height: 48px;
   justify-content: space-between;
@@ -89,7 +89,7 @@ input::placeholder,
 textarea,
 input[type="text"],
 input[type="email"] {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -134,7 +134,8 @@ li {
   height: 604px;
 }
 
-.content { /* CONTENT CONTAINER */
+.content {
+  /* CONTENT CONTAINER */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,10 +325,19 @@ li {
   background-repeat: no-repeat;
   background-position: right;
   height: 780px;
-  background-color: #6070FF;
+  background-color: #6070ff;
   border-top-left-radius: 45px;
 }
-
+.form_header {
+  margin-left: 10%;
+}
+.form_header h2 {
+  padding-top: 50px;
+}
+.form_header p {
+  padding-top: 10px;
+  width: 50%;
+}
 input[type="text"],
 input[type="email"],
 textarea {
@@ -339,7 +349,6 @@ input::placeholder,
 textarea::placeholder {
   color: #b3bac5;
   font-size: 15px;
-  
 }
 
 textarea {
@@ -358,13 +367,21 @@ input,
 textarea {
   background: #ffffff;
   width: 90%;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
-  margin-top: 18px;  
+  margin-top: 18px;
 }
 
 .submit_button {
   margin-top: 20px;
+}
+.submit_button:hover {
+  background-color: #396df2;
+  color: #ffffff;
+}
+.submit_button:active {
+  background-color: #2230d2;
+  color: #ffffff;
 }
 
 #form_ul {
