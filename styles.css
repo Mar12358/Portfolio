@@ -4,10 +4,8 @@ body {
 }
 
 #welcome {
-  
   background-image: url('header-shapes mobile@2x.svg');
   background-repeat: no-repeat;
-
   border-bottom-left-radius: 15%;
   background-position: center;
 }
@@ -246,7 +244,6 @@ li {
   height: 48px;
   align-items: center;
   justify-content: center;
-  padding-left: ;
 }
 
 .submit_button {
@@ -320,4 +317,56 @@ li {
   color: #253858;
   font-size: 15px;
   font-weight: 500;
+}
+
+.contact {
+  background-image: url(contact_bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 780px;
+  background-color: #6070FF;
+  border-top-left-radius: 45px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding-left: 16px;
+  font-size: 17px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b3bac5;
+  font-size: 15px;
+  
+}
+
+textarea {
+  height: 170px;
+}
+
+input {
+  height: 48px;
+}
+
+textarea {
+  padding-top: 15px;
+}
+
+input,
+textarea {
+  background: #ffffff;
+  width: 90%;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  margin-top: 18px;  
+}
+
+.submit_button {
+  margin-top: 20px;
+}
+
+#form_ul {
+  padding: 24px;
 }
