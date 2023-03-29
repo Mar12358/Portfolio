@@ -22,24 +22,18 @@ header {
   display: flex;
   height: 48px;
   justify-content: space-between;
-  margin-right: 6.4%;
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 20%;
-}
+
 
 .menu {
-  margin-top: 12px;
+  position: absolute;
+  float: right;
+  margin-top: 8px;
   width: 24px;
   height: 24px;
+  right: 15px;
 }
-
 .logo {
   color: #6070ff;
   font-weight: 700;
@@ -54,13 +48,13 @@ header {
 
 .nav-bar {
   display: flex;
-  width: 10.666666%;
-  justify-content: center;
+  border: 1px solid rebeccapurple;
 }
 
 .logo,
 .nav-bar {
   justify-content: center;
+  
 }
 
 .app-wrap {
@@ -195,7 +189,8 @@ li {
 }
 
 .canopy,
-.text_li {
+.text_li,
+#menu_list > * {
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -396,6 +391,10 @@ textarea {
   padding-left: 24px;
 }
 
+#menu_list {
+  visibility: hidden;
+}
+
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
@@ -447,16 +446,40 @@ textarea {
   font-size: 18px;
   }
 
-.card_bottom {
-  margin-top: 6%;
-}
-  
-.card_bottom > * {
-  flex: none;
-}
+  .card_bottom {
+    margin-top: 6%;
+  }
+    
+  .card_bottom > * {
+    flex: none;
+  }
 
-.categories {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+  .categories {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #menu_list {
+    visibility: visible;
+    float: right;
+    display: flex;
+    margin-top: 0px;
+    margin-right: 130px;
+    display: flex;
+    justify-content:spa;
+    gap: 15px;
+  }
+  #menu_list > * > *{
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
