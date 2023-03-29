@@ -505,21 +505,14 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
     background-image: url(/styles-conference/assets/form_bg_screen.svg);
-    background-repeat: no-repeat;
     background-position: center;
-    height: 780px;
-    background-color: #6070ff;
-    border-top-left-radius: 50px;
+
   }
 
   .form_header p {
     text-align: center;
-    color: #ebebff;
     width: 550px;
-    font-weight: 400;
-    font-size: 20px;
   }
 
   #form_ul {
@@ -532,9 +525,6 @@ textarea {
   input,
   textarea {
     width: 447px;
-    background: #fff;
-    border: 1px solid #cfd8dc;
     border-radius: 1px;
-    margin-top: 18px;
   }
 }
