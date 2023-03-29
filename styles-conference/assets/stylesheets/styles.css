@@ -176,8 +176,8 @@ li {
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  width: 80%;
   font-size: 12px;
+  padding: 1px;
 }
 
 .canopy,
@@ -185,6 +185,12 @@ li {
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
+}
+
+#ruby_categorie {
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .text_li {
@@ -360,10 +366,6 @@ input::placeholder,
 textarea::placeholder {
   color: #b3bac5;
   font-size: 15px;
-}
-
-input::placeholder,
-textarea::placeholder {
   font-weight: 400;
 }
 
@@ -482,6 +484,10 @@ textarea {
     gap: 15px;
   }
 
+  .about_my_self > * {
+    width: auto;
+  }
+
   #menu_list > * > * {
     font-size: 15px;
     font-weight: 500;
@@ -501,15 +507,10 @@ textarea {
   }
 
   .about_my_self {
-   
     display: grid;
     grid-template-columns: 40% 60%;
     padding-left: 10vh;
     padding-right: 10vh;
-  }
-  
-  .about_my_self > *{
-    width: auto;
   }
 
   .content_about_self1 {
@@ -568,5 +569,10 @@ textarea {
 
   .list_info {
     width: 100%;
+  }
+
+  #ruby_categorie {
+    visibility: visible;
+    position: static;
   }
 }
