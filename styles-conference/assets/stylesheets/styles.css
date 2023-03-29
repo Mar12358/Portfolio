@@ -398,21 +398,20 @@ textarea {
 
 @media screen and (min-device-width: 768px) {
   .content {
-    
-    
     width: 67%;
   }
+
   .app-wrap {
     align-items: center;
-
   }
+
   #welcome {
     background-image: url(/styles-conference/assets/desktop_bg.svg);
     background-size: contain;
-    background-position:top ;
+    background-position: top;
   }
+
   header {
     width: 100%;
   }
 }
-
