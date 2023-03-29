@@ -102,18 +102,13 @@ li {
   padding-inline-start: 1px;
 }
 
-.icons,
-.icons_padding {
+.icons {
   display: flex;
   align-items: center;
   justify-content: left;
   margin-left: 14px;
   gap: 3px;
   width: 190px;
-}
-
-.icons_padding {
-  padding-inline-start: 15px;
 }
 
 .social {
@@ -288,6 +283,11 @@ li {
   display: flex;
   flex-direction: column;
   padding-inline-start: 1px;
+}
+
+.ul_list_info {
+  margin: 1px;
+  padding: 1px;
 }
 
 .list_info {
@@ -478,4 +478,29 @@ textarea {
 
     grid-template-rows: repeat(4, auto);
   }
+
+  .about_my_self {
+    display: flex;
+  }
+ 
+  .content_about_self2{
+    padding: 1px;
+    margin: 1px;
+  }
+  .ul_list_info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .list_lang {
+ 
+    flex-direction: column;
+    gap: 3px;
+    border-radius: 8px;
+    background-color: #f7f7f9;
+    align-items: center;
+    padding: 5px;
+    margin: 3px;
+  }
+
 }
