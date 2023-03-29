@@ -206,8 +206,8 @@ li {
 
 .categories {
   display: flex;
-  width: 213px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 11px;
 }
 
 .categories > * {
