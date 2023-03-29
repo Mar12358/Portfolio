@@ -4,9 +4,9 @@ body {
 
 #welcome {
   background-image: url(/styles-conference/assets/header-shapes-mobile.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
-  background-position: center;
 }
 
 #welcome,
@@ -71,7 +71,7 @@ header {
 .salute {
   color: #172b4d;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 130%;
   line-height: 52px;
 }
@@ -406,7 +406,13 @@ textarea {
     align-items: center;
 
   }
-
-  
+  #welcome {
+    background-image: url(/styles-conference/assets/desktop_bg.svg);
+    background-size: contain;
+    background-position:top ;
+  }
+  header {
+    width: 100%;
+  }
 }
 
