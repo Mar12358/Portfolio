@@ -3,7 +3,7 @@ body {
 }
 
 #welcome {
-  background-image: url("header-shapes mobile@2x.svg");
+  background-image: url(/styles-conference/assets/header-shapes-mobile.svg);
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
   background-position: center;
@@ -323,7 +323,7 @@ li {
 
 .contact {
   padding-top: 60px;
-  background-image: url(contact_bg.svg);
+  background-image: url(/styles-conference/assets/contact_bg.svg);
   background-repeat: no-repeat;
   background-position: right;
   height: 780px;
