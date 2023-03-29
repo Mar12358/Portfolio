@@ -575,4 +575,21 @@ textarea {
     visibility: visible;
     position: static;
   }
+
+  .welcome_salute {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .description_cards,
+  #about_description {
+    font-size: 16px;
+  }
+
+  .card_title {
+    font-size: 40px;
+  }
 }
