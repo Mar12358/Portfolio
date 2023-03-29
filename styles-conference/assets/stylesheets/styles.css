@@ -395,3 +395,18 @@ textarea {
 #form_ul {
   padding-left: 24px;
 }
+
+@media screen and (min-device-width: 768px) {
+  .content {
+    
+    
+    width: 67%;
+  }
+  .app-wrap {
+    align-items: center;
+
+  }
+
+  
+}
+
