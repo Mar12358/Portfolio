@@ -24,8 +24,6 @@ header {
   justify-content: space-between;
 }
 
-
-
 .menu {
   position: absolute;
   float: right;
@@ -34,6 +32,7 @@ header {
   height: 24px;
   right: 15px;
 }
+
 .logo {
   color: #6070ff;
   font-weight: 700;
@@ -54,7 +53,6 @@ header {
 .logo,
 .nav-bar {
   justify-content: center;
-  
 }
 
 .app-wrap {
@@ -182,15 +180,14 @@ li {
 .card_ul {
   display: flex;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   gap: 8px;
   width: 80%;
   font-size: 12px;
 }
 
 .canopy,
-.text_li,
-#menu_list > * {
+.text_li {
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -281,6 +278,10 @@ li {
 
 #m_icon {
   order: 2;
+}
+
+#menu_list {
+  visibility: hidden;
 }
 
 .content_about_self2 {
@@ -391,10 +392,6 @@ textarea {
   padding-left: 24px;
 }
 
-#menu_list {
-  visibility: hidden;
-}
-
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
@@ -417,6 +414,7 @@ textarea {
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: auto;
   }
 
   .card_image {
@@ -437,19 +435,15 @@ textarea {
     order: 1;
   }
 
-  .card {
-    height: auto;
-  }
-  
   .canopy,
   .text_li {
-  font-size: 18px;
+    font-size: 18px;
   }
 
   .card_bottom {
     margin-top: 6%;
   }
-    
+
   .card_bottom > * {
     flex: none;
   }
@@ -463,13 +457,11 @@ textarea {
     visibility: visible;
     float: right;
     display: flex;
-    margin-top: 0px;
     margin-right: 130px;
-    display: flex;
-    justify-content:spa;
     gap: 15px;
   }
-  #menu_list > * > *{
+
+  #menu_list > * > * {
     font-size: 15px;
     font-weight: 500;
   }
