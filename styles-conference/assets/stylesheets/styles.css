@@ -414,4 +414,26 @@ textarea {
   header {
     width: 100%;
   }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card_image {
+    width: 100%;
+    height: auto;
+  }
+
+  #tonic1 {
+    order: 1;
+  }
+
+  #stories1 {
+    order: 2;
+  }
+  #img_link_storie1,
+  #img_link_storie2 {
+    order: 1;
+  }
 }
