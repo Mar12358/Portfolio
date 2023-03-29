@@ -328,8 +328,6 @@ li {
 }
 
 .form_header {
-  padding-left: 20px;
-  width: 87%;
   text-align: center;
 }
 
@@ -474,26 +472,26 @@ textarea {
     display: flex;
     justify-content: flex-end;
   }
-  #work {
 
+  #work {
     grid-template-rows: repeat(4, auto);
   }
 
   .about_my_self {
     display: flex;
   }
- 
-  .content_about_self2{
+
+  .content_about_self2 {
     padding: 1px;
     margin: 1px;
   }
+
   .ul_list_info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
   .list_lang {
- 
     flex-direction: column;
     gap: 3px;
     border-radius: 8px;
@@ -503,4 +501,40 @@ textarea {
     margin: 3px;
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    background-image: url(/styles-conference/assets/form_bg_screen.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 780px;
+    background-color: #6070ff;
+    border-top-left-radius: 50px;
+  }
+
+  .form_header p {
+    text-align: center;
+    color: #ebebff;
+    width: 550px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  #form_ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1px;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 447px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 1px;
+    margin-top: 18px;
+  }
 }
