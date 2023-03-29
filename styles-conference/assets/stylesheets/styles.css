@@ -167,14 +167,13 @@ li {
 }
 
 .card > * {
-  margin-left: 14px;
-  margin-right: 14px;
+  margin: 4%;
 }
 
 .card_bottom {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card_bottom > * {
@@ -189,8 +188,9 @@ li {
 .card_ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 75%;
+  justify-content:flex-start;
+  gap: 8px;
+  width: 80%;
   font-size: 12px;
 }
 
@@ -198,7 +198,7 @@ li {
 .text_li {
   font-size: 13px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .text_li {
@@ -432,8 +432,31 @@ textarea {
   #stories1 {
     order: 2;
   }
+
   #img_link_storie1,
   #img_link_storie2 {
     order: 1;
   }
+
+  .card {
+    height: auto;
+  }
+  
+  .canopy,
+  .text_li {
+  font-size: 18px;
+  }
+
+.card_bottom {
+  margin-top: 6%;
+}
+  
+.card_bottom > * {
+  flex: none;
+}
+
+.categories {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 }
