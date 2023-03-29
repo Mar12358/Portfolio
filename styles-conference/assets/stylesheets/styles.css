@@ -474,4 +474,8 @@ textarea {
     display: flex;
     justify-content: flex-end;
   }
+  #work {
+
+    grid-template-rows: repeat(4, auto);
+  }
 }
