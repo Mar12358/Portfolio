@@ -253,8 +253,8 @@ li {
 .about_my_self {
   border-top-right-radius: 50px;
   margin-top: 114px;
-  padding-top: 114px;
-  padding-bottom: 100px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .content_about_self {
@@ -501,7 +501,19 @@ textarea {
   }
 
   .about_my_self {
-    display: flex;
+   
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+  
+  .about_my_self > *{
+    width: auto;
+  }
+
+  .content_about_self1 {
+    margin-left: 9.8vh;
   }
 
   .content_about_self2 {
@@ -552,5 +564,9 @@ textarea {
 
   .welcome_content {
     height: 70vw;
+  }
+
+  .list_info {
+    width: 100%;
   }
 }
