@@ -362,8 +362,6 @@ textarea::placeholder {
 }
 
 input::placeholder,
-textarea::placeholder,
-input::placeholder,
 textarea::placeholder {
   font-weight: 400;
 }
@@ -387,11 +385,23 @@ textarea {
   margin-top: 18px;
 }
 
+.see_project_button:hover,
+.get_resume_button:hover,
 .submit_button:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: #fff;
 }
 
+.see_project_button:disabled,
+.get_resume_button:disabled,
+.submit_button:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+}
+
+.see_project_button:active,
+.get_resume_button:active,
 .submit_button:active {
   background-color: #2230d2;
   color: #fff;
