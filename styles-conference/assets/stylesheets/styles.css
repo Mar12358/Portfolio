@@ -423,7 +423,8 @@ textarea {
   #welcome {
     background-image: url(/styles-conference/assets/desktop_bg.svg);
     background-size: contain;
-    background-position: top;
+    background-position: center;
+    background-position-y: 100px;
   }
 
   header {
@@ -546,5 +547,9 @@ textarea {
   textarea {
     width: 447px;
     border-radius: 1px;
+  }
+
+  .welcome_content {
+    height: 70vw;
   }
 }
