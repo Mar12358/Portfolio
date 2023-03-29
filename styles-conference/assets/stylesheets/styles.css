@@ -508,7 +508,7 @@ textarea {
     padding-top: 60px;
     background-image: url(/styles-conference/assets/form_bg_screen.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     height: 780px;
     background-color: #6070ff;
     border-top-left-radius: 50px;
