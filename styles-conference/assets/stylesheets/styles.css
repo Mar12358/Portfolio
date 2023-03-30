@@ -421,6 +421,10 @@ textarea {
   padding-left: 24px;
 }
 
+#contact_section {
+  background-color: white;
+}
+
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
@@ -445,6 +449,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
+    border-radius: 2vw;
   }
 
   .card_image {
@@ -517,8 +522,11 @@ textarea {
   .about_my_self {
     display: grid;
     grid-template-columns: 40% 60%;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    border-top-right-radius: 10vw;
+    padding-left: 13vh;
+    padding-right: 16vh;
+    padding-top: 18vh;
+    padding-bottom: 20vh;
   }
 
   .content_about_self1 {
@@ -532,7 +540,7 @@ textarea {
 
   .ul_list_info {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr) 41%;
   }
 
   .list_lang {
@@ -540,8 +548,8 @@ textarea {
     gap: 3px;
     border-radius: 8px;
     background-color: #f7f7f9;
-    align-items: center;
-    padding: 5px;
+    align-items: baseline;
+    padding: 13px;
     margin: 3px;
   }
 
@@ -551,6 +559,7 @@ textarea {
     align-items: center;
     background-image: url(/styles-conference/assets/form_bg_screen.svg);
     background-position: center;
+    border-top-left-radius: 10vw;
   }
 
   .form_header p {
@@ -575,7 +584,7 @@ textarea {
   }
 
   .list_info {
-    width: 100%;
+    width: 95%;
   }
 
   #ruby_categorie {
