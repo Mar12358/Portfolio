@@ -483,7 +483,8 @@ textarea {
     visibility: visible;
     float: right;
     display: flex;
-    margin-right: 130px;
+    margin-right: 15vw;
+    margin-top: 7px;
     gap: 15px;
   }
 
@@ -595,4 +596,9 @@ textarea {
   .card_title {
     font-size: 40px;
   }
+
+  .logo {
+  
+  margin-left: 5vw;
+}
 }
