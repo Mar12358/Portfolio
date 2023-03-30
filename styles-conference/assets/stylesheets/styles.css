@@ -341,13 +341,16 @@ li {
 }
 
 .form_header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form_header h2 {
   color: #ebebff;
   font-weight: 700;
   font-size: 40px;
+  margin-bottom: 1px;
 }
 
 .form_header p {
@@ -386,6 +389,7 @@ input,
 textarea {
   background: #fff;
   width: 90%;
+  max-width: 447px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-top: 18px;
@@ -550,7 +554,6 @@ textarea {
   }
 
   .form_header p {
-    text-align: center;
     width: 550px;
   }
 
@@ -598,7 +601,6 @@ textarea {
   }
 
   .logo {
-  
-  margin-left: 5vw;
-}
+    margin-left: 5vw;
+  }
 }
