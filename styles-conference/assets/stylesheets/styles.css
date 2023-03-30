@@ -3,10 +3,10 @@ body {
 }
 
 #welcome {
-  background-image: url("header-shapes mobile@2x.svg");
+  background-image: url(/styles-conference/assets/header-shapes-mobile.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   border-bottom-left-radius: 15%;
-  background-position: center;
 }
 
 #welcome,
@@ -17,27 +17,24 @@ body {
   border: 1px solid white;
 }
 
+.menu_link {
+  text-decoration: none;
+}
+
 header {
   /* HEADER CONTAINER */
   display: flex;
   height: 48px;
   justify-content: space-between;
-  margin-right: 6.4%;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 20%;
 }
 
 .menu {
-  margin-top: 12px;
+  position: absolute;
+  float: right;
+  margin-top: 8px;
   width: 24px;
   height: 24px;
+  right: 15px;
 }
 
 .logo {
@@ -54,8 +51,6 @@ header {
 
 .nav-bar {
   display: flex;
-  width: 10.666666%;
-  justify-content: center;
 }
 
 .logo,
@@ -72,7 +67,6 @@ header {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
-  line-height: 130%;
   line-height: 52px;
 }
 
@@ -110,18 +104,13 @@ li {
   padding-inline-start: 1px;
 }
 
-.icons,
-.icons_padding {
+.icons {
   display: flex;
   align-items: center;
   justify-content: left;
   margin-left: 14px;
   gap: 3px;
   width: 190px;
-}
-
-.icons_padding {
-  padding-inline-start: 15px;
 }
 
 .social {
@@ -167,14 +156,13 @@ li {
 }
 
 .card > * {
-  margin-left: 14px;
-  margin-right: 14px;
+  margin: 4%;
 }
 
 .card_bottom {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card_bottom > * {
@@ -189,9 +177,10 @@ li {
 .card_ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 75%;
+  justify-content: flex-start;
+  gap: 8px;
   font-size: 12px;
+  padding: 1px;
 }
 
 .canopy,
@@ -199,6 +188,12 @@ li {
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
+}
+
+#ruby_categorie {
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .text_li {
@@ -212,10 +207,14 @@ li {
   color: #344563;
 }
 
+.description_cards {
+  font-size: 15px;
+}
+
 .categories {
   display: flex;
-  width: 213px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 11px;
 }
 
 .categories > * {
@@ -263,8 +262,8 @@ li {
 .about_my_self {
   border-top-right-radius: 50px;
   margin-top: 114px;
-  padding-top: 114px;
-  padding-bottom: 100px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .content_about_self {
@@ -288,10 +287,19 @@ li {
   order: 2;
 }
 
+#menu_list {
+  visibility: hidden;
+}
+
 .content_about_self2 {
   display: flex;
   flex-direction: column;
   padding-inline-start: 1px;
+}
+
+.ul_list_info {
+  margin: 1px;
+  padding: 1px;
 }
 
 .list_info {
@@ -301,7 +309,8 @@ li {
 }
 
 .list_info > * {
-  font-weight: 600;
+  color: #344563;
+  font-weight: 500;
   font-size: 20px;
 }
 
@@ -323,7 +332,7 @@ li {
 
 .contact {
   padding-top: 60px;
-  background-image: url(contact_bg.svg);
+  background-image: url(/styles-conference/assets/contact_bg.svg);
   background-repeat: no-repeat;
   background-position: right;
   height: 780px;
@@ -332,18 +341,20 @@ li {
 }
 
 .form_header {
-  padding-left: 20px;
-  width: 87%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form_header h2 {
   color: #ebebff;
   font-weight: 700;
   font-size: 40px;
+  margin-bottom: 1px;
 }
 
 .form_header p {
+  text-align: center;
   color: #ebebff;
   width: 327px;
   font-weight: 400;
@@ -361,6 +372,7 @@ input::placeholder,
 textarea::placeholder {
   color: #b3bac5;
   font-size: 15px;
+  font-weight: 400;
 }
 
 textarea {
@@ -377,16 +389,29 @@ input,
 textarea {
   background: #fff;
   width: 90%;
+  max-width: 447px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-top: 18px;
 }
 
+.see_project_button:hover,
+.get_resume_button:hover,
 .submit_button:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: #fff;
 }
 
+.see_project_button:disabled,
+.get_resume_button:disabled,
+.submit_button:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+}
+
+.see_project_button:active,
+.get_resume_button:active,
 .submit_button:active {
   background-color: #2230d2;
   color: #fff;
@@ -394,4 +419,197 @@ textarea {
 
 #form_ul {
   padding-left: 24px;
+}
+
+#contact_section {
+  background-color: white;
+}
+
+@media screen and (min-device-width: 768px) {
+  .content {
+    width: 67%;
+  }
+
+  .app-wrap {
+    align-items: center;
+  }
+
+  #welcome {
+    background-image: url(/styles-conference/assets/desktop_bg.svg);
+    background-size: contain;
+    background-position: center;
+    background-position-y: 100px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    border-radius: 2vw;
+  }
+
+  .card_image {
+    width: 100%;
+    height: auto;
+  }
+
+  #tonic1 {
+    order: 1;
+  }
+
+  #stories1 {
+    order: 2;
+  }
+
+  #img_link_storie1,
+  #img_link_storie2 {
+    order: 1;
+  }
+
+  .canopy,
+  .text_li {
+    font-size: 18px;
+  }
+
+  .card_bottom {
+    margin-top: 6%;
+  }
+
+  .card_bottom > * {
+    flex: none;
+  }
+
+  .categories {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #menu_list {
+    visibility: visible;
+    float: right;
+    display: flex;
+    margin-right: 15vw;
+    margin-top: 7px;
+    gap: 15px;
+  }
+
+  .about_my_self > * {
+    width: auto;
+  }
+
+  #menu_list > * > * {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #work {
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .about_my_self {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-top-right-radius: 10vw;
+    padding-left: 13vh;
+    padding-right: 16vh;
+    padding-top: 18vh;
+    padding-bottom: 20vh;
+  }
+
+  .content_about_self1 {
+    margin-left: 9.8vh;
+  }
+
+  .content_about_self2 {
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .ul_list_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 41%;
+  }
+
+  .list_lang {
+    flex-direction: column;
+    gap: 3px;
+    border-radius: 8px;
+    background-color: #f7f7f9;
+    align-items: baseline;
+    padding: 13px;
+    margin: 3px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/styles-conference/assets/form_bg_screen.svg);
+    background-position: center;
+    border-top-left-radius: 10vw;
+  }
+
+  .form_header p {
+    width: 550px;
+  }
+
+  #form_ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1px;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 447px;
+    border-radius: 1px;
+  }
+
+  .welcome_content {
+    height: 70vw;
+  }
+
+  .list_info {
+    width: 95%;
+  }
+
+  #ruby_categorie {
+    visibility: visible;
+    position: static;
+  }
+
+  .welcome_salute {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .description_cards,
+  #about_description {
+    font-size: 16px;
+  }
+
+  .card_title {
+    font-size: 40px;
+  }
+
+  .logo {
+    margin-left: 5vw;
+  }
 }
