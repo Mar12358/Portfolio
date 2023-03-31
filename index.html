@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-conference/assets/stylesheets/styles.css"/>
     <script
       src="https://kit.fontawesome.com/716817a6e7.js"
       crossorigin="anonymous"
@@ -18,58 +17,43 @@
   <body>
     <section id="welcome">
       <div class="app-wrap">
-        <header class="app-header">
+        <header>
           <a class="logo" href="#">My Logo</a>
           <nav class="nav-bar">
-            <img class="menu" src="Union.png" alt="menu" />
+            <div class="menu">
+              <img class="menu" src="styles-conference/assets/Union.png" alt="menu"/>
+              <ul id="menu_list">
+                <li><a class="menu_link" href="#">Portfolio</a></li>
+                <li><a class="menu_link" href="#">About</a></li>
+                <li><a class="menu_link" href="#">Contact</a></li>
+              </ul>
+            </div>
           </nav>
         </header>
         <div class="content welcome_content">
-          <h1 class="salute">I'm Martin. Glad to see you!</h1>
-          <p class="description">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hesitate to
-            contact me.
-          </p>
-          <p class="lets_connect">LET’S CONNECT</p>
+          <h1 id="home_salute" class="welcome_salute salute">I'm Martin.</br> Glad to see you!</h1>
+            <p class="description">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you like
+              what you see and have a project you need coded, don’t hesitate to
+              contact me.
+            </p>
+            <p class="lets_connect">LET’S CONNECT</p>
           <ul class="icons">
             <li>
-              <a href="#"
-                ><img
-                  class="social"
-                  src="SocialMediaIcons\Twitter_icon.png"
-                  alt="Twitter_icon"
-              /></a>
+              <a href="#"><img class="social" src="SocialMediaIcons\Twitter_icon.png" alt="Twitter_icon"/></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social"
-                  src="SocialMediaIcons\Linkedin_icon.png"
-                  alt="Linkedin_icon"
-              /></a>
+              <a href="#"><img class="social" src="SocialMediaIcons\Linkedin_icon.png" alt="Linkedin_icon"/></a>
             </li>
             <li>
-              <a href="#"
-                ><img class="social" src="SocialMediaIcons\M_icon.png" alt="M"
-              /></a>
+              <a href="#"><img class="social" src="SocialMediaIcons\M_icon.png" alt="M"/></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social"
-                  src="SocialMediaIcons\Github_icon.png"
-                  alt="Github_icon"
-              /></a>
+              <a href="#"><img class="social" src="SocialMediaIcons\Github_icon.png" alt="Github_icon"/></a>
             </li>
             <li>
-              <a href="#"
-                ><img
-                  class="social"
-                  src="SocialMediaIcons\Hand_icon.png"
-                  alt="Hand_icon"
-              /></a>
+              <a href="#"><img class="social" src="SocialMediaIcons\Hand_icon.png" alt="Hand_icon"/></a>
             </li>
           </ul>
         </div>
@@ -78,24 +62,23 @@
     <div id="work">
       <section id="tonic1">
         <div class="card">
-          <a class="card_image" href="#"
-            ><img src="tonic1_image.svg" alt="tonic1"
-          /></a>
+          
+          <a href="#"><img class="card_image" src="styles-conference/assets/tonic1_image.svg" alt="tonic1"/></a>
           <div class="card_bottom">
-            <h2 class="card_title">Tonic</h2>
+            <h2 class="card_title">Facebook 360</h2>
             <ul class="card_ul">
-              <li><p class="canopy">CANOPY</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
-              <li><p class="text_li">Back End Dev</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
+              <li><p class="canopy">FACEBOOK</p></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
+              <li><p class="text_li">Full Stack Dev</p></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
               <li><p class="text_li">2015</p></li>
             </ul>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="description description_cards">
+              Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
             </p>
             <ul class="categories">
               <li><p>HTML</p></li>
+              <li id="ruby_categorie"><p>Ruby on rails</p></li>
               <li><p>CSS</p></li>
               <li><p>JavaScript</p></li>
             </ul>
@@ -105,24 +88,22 @@
       </section>
       <section id="stories1">
         <div class="card">
-          <a class="card_image" href="#"
-            ><img src="stories1_image.svg" alt="stories1"
-          /></a>
+          <a id="img_link_storie1" href="#"><img class="card_image" class="card_img" src="styles-conference/assets/stories1_image.svg" alt="stories1"/></a>
           <div class="card_bottom">
-            <h2 class="card_title">Multi-Post Stories</h2>
+            <h2 class="card_title">Uber Navigation</h2>
             <ul class="card_ul">
-              <li><p class="canopy">CANOPY</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
-              <li><p class="text_li">Back End Dev</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
-              <li><p class="text_li">2015</p></li>
+              <li><p class="canopy">Uber</p></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
+              <li><p class="text_li">Lead Developer</p></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
+              <li><p class="text_li">2018</p></li>
             </ul>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="description description_cards">
+              A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
             </p>
             <ul class="categories">
               <li><p>HTML</p></li>
+              <li id="ruby_categorie"><p>Ruby on rails</p></li>
               <li><p>CSS</p></li>
               <li><p>JavaScript</p></li>
             </ul>
@@ -132,19 +113,17 @@
       </section>
       <section id="tonic2">
         <div class="card">
-          <a class="card_image" href="#"
-            ><img src="tonic2_image.svg" alt="tonic2"
-          /></a>
+          <a href="#"><img class="card_image" src="styles-conference/assets/tonic2_image.svg" alt="tonic2"/></a>
           <div class="card_bottom">
             <h2 class="card_title">Tonic</h2>
             <ul class="card_ul">
               <li><p class="canopy">CANOPY</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
               <li><p class="text_li">Back End Dev</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
               <li><p class="text_li">2015</p></li>
             </ul>
-            <p class="description">
+            <p class="description description_cards">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
@@ -159,24 +138,22 @@
       </section>
       <section id="stories2">
         <div class="card">
-          <a class="card_image" href="#"
-            ><img src="stories2_image.svg" alt="stories2"
-          /></a>
+          <a id="img_link_storie2" href="#"><img class="card_image" src="styles-conference/assets/stories2_image.svg" alt="stories2"/></a>
           <div class="card_bottom">
             <h2 class="card_title">Multi-Post Stories</h2>
             <ul class="card_ul">
-              <li><p class="canopy">CANOPY</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
-              <li><p class="text_li">Back End Dev</p></li>
-              <li><img class="counter" src="Counter.svg" alt="counter" /></li>
+              <li><p class="canopy">FACEBOOK</p></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
+              <li><p class="text_li">Full Stack Dev</p></li>
+              <li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>
               <li><p class="text_li">2015</p></li>
             </ul>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="description description_cards">
+              Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
             </p>
             <ul class="categories">
               <li><p>HTML</p></li>
+              <li id="ruby_categorie"><p>Ruby on rails</p></li>
               <li><p>CSS</p></li>
               <li><p>JavaScript</p></li>
             </ul>
@@ -188,128 +165,109 @@
     <section class="about_my_self">
       <div class="content content_about_self">
         <h2 class="salute">About Myself</h2>
-        <p class="description">
+        <p id="about_description" class="description">
           Hello I’m a software developer! I can help you build a product ,
           feature or website. Look through some of my work and experience! If
           you like what you see and have a project you need coded, don’t
           hesitate to contact me.
         </p>
-        <p class="lets_connect">LET’S CONNECT</p>
+        <p class="lets_connect">LET’S CONNECT</p></br>
         <ul class="icons">
           <li id="twitter_icon">
-            <a href="#"
-              ><img
-                class="social"
-                src="SocialMediaIcons\Twitter_icon.png"
-                alt="Twitter_icon"
-            /></a>
+            <a href="#"><img class="social" src="SocialMediaIcons\Twitter_icon.png" alt="Twitter_icon"/></a>
           </li>
           <li id="linkedin_icon">
-            <a href="#"
-              ><img
-                class="social"
-                src="SocialMediaIcons\Linkedin_icon.png"
-                alt="Linkedin_icon"
-            /></a>
+            <a href="#" ><img class="social" src="SocialMediaIcons\Linkedin_icon.png" alt="Linkedin_icon"/></a>
           </li>
           <li id="m_icon">
-            <a href="#"
-              ><img class="social" src="SocialMediaIcons\M_icon.png" alt="M"
-            /></a>
+            <a href="#"><img class="social" src="SocialMediaIcons\M_icon.png" alt="M"/></a>
           </li>
           <li id="git_icon">
-            <a href="#"
-              ><img
-                class="social"
-                src="SocialMediaIcons\Github_icon.png"
-                alt="Github_icon"
-            /></a>
+            <a href="#"><img class="social" src="SocialMediaIcons\Github_icon.png" alt="Github_icon"/></a>
           </li>
           <li id="hand_icon">
-            <a href="#"
-              ><img
-                class="social"
-                src="SocialMediaIcons\Hand_icon.png"
-                alt="Hand_icon"
-            /></a>
+            <a href="#"><img class="social" src="SocialMediaIcons\Hand_icon.png" alt="Hand_icon"/></a>
           </li>
         </ul>
         <a class="get_resume_button" href="#">Get my resume</a>
+      </div>
+      <div class="content content_about_self">
         <ul class="content_about_self2">
           <li class="list_info">
-            <p>Languajes</p>
-            <img class="arrow" src="arrow_down.svg" />
+            <p>Languages</p>
+            <img class="arrow" src="styles-conference/assets/arrow_down.svg"/>
           </li>
-          <li class="list_lang">
-            <img class="lang_logo" src="js_logo.svg" />
-            <p>JavaScript</p>
-          </li>
-          <li class="list_lang">
-            <img class="lang_logo" src="html_logo.svg" />
-            <p>HTML</p>
-          </li>
-          <li class="list_lang">
-            <img class="lang_logo" src="css_logo.svg" />
-            <p>CSS</p>
-          </li>
+          <ul class="ul_list_info">
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/js_logo.svg"/>
+              <p>JavaScript</p>
+            </li>
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/html_logo.svg"/>
+              <p>HTML</p>
+            </li>
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/css_logo.svg"/>
+              <p>CSS</p>
+            </li>
+          </ul>
           <li class="list_info">
             <p>Frameworks</p>
-            <img class="arrow" src="arrow_left.svg" />
+            <img class="arrow" src="styles-conference/assets/arrow_left.svg"/>
           </li>
-          <img src="Separator.svg" alt="separator" />
+          <img src="styles-conference/assets/Separator.svg" alt="separator"/>
           <li class="list_info">
             <p>Skills</p>
-            <img class="arrow" src="arrow_left.svg" />
+            <img class="arrow" src="styles-conference/assets/arrow_left.svg"/>
           </li>
-          <img src="Separator.svg" alt="separator" />
+          <img src="styles-conference/assets/Separator.svg" alt="separator"/>
         </ul>
       </div>
     </section>
-    <section class="contact">
-      <div class="form_header">
-        <h2>Contact me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-    </div>
-        <form action="https://formspree.io/f/moqzkark" method="post">
-          <ul id="form_ul">
-            <li>
-              <input
-                type="text"
-                maxlength="30"
-                id="name"
-                name="user_name"
-                placeholder="Name"
-                required
-              />
-            </li>
-            <li>
-              <input
-                type="email"
-                id="mail"
-                name="user_email"
-                placeholder="your@email.com"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                id="msg"
-                maxlength="500"
-                name="user_message"
-                placeholder="Write your message here..."
-                required
-              ></textarea>
-            </li>
-            <li class="button">
-              <button class="submit_button" type="submit">Get in touch</button>
-            </li>
-          </ul>
-        </form>
-      
+    <section id="contact_section">
+      <section class="contact">
+        <div class="form_header">
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
+        </div>
+          <form action="https://formspree.io/f/moqzkark" method="post">
+            <ul id="form_ul">
+              <li>
+                <input
+                  type="text"
+                  maxlength="30"
+                  id="name"
+                  name="user_name"
+                  placeholder="Name"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  id="msg"
+                  maxlength="500"
+                  name="user_message"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </li>
+              <li class="button">
+                <button class="submit_button" type="submit">Get in touch</button>
+              </li>
+            </ul>
+          </form>
+        
+      </section>
     </section>
   </body>
 </html>
