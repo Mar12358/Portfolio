@@ -254,6 +254,8 @@ li {
   height: 48px;
   align-items: center;
   justify-content: center;
+  transition-property: background-color, color, transform;
+  transition-duration: 0.5s;
 }
 
 .submit_button {
@@ -408,6 +410,7 @@ textarea {
 .see_project_button:hover,
 .get_resume_button:hover,
 .submit_button:hover {
+  transform: scale(1.1);
   background-color: #6070ff;
   color: #fff;
 }
@@ -621,5 +624,27 @@ textarea {
 
   .logo {
     margin-left: 5vw;
+  }
+
+  .categories li {
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+
+  .categories li:hover {
+    transform: scale(1.2) rotate(360deg);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    background: #172b4d;
+  }
+
+  .card_image {
+    transition: transform 0.5s;
+    border-radius: 1.5vw;
+  }
+
+  .card_image:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
