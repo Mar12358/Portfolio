@@ -634,8 +634,9 @@ textarea {
 
   .categories li:hover {
     transform: scale(1.2) rotate(360deg);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-    background: #172b4d;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    background: #507ecc;
+    color: #c1c7d0;
   }
 
   .card_image {
@@ -645,6 +646,6 @@ textarea {
 
   .card_image:hover {
     transform: scale(1.03);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
