@@ -627,8 +627,8 @@ textarea {
   }
 
   .categories li {
-    transition-property: transform;
-    transition-duration: 1s;
+    transition-property: transform, box-shadow, color, background;
+    transition-duration: 1.5s;
     transition-timing-function: ease-out;
   }
 
@@ -640,7 +640,8 @@ textarea {
   }
 
   .card_image {
-    transition: transform 0.5s;
+    transition-property: transform, box-shadow;
+    transition-duration: 1.5s;
     border-radius: 1.5vw;
   }
 
