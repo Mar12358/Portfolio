@@ -61,16 +61,16 @@ This is my own portfolio websites
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **My work**
+- **Who am I**
+- **Contact me**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Coming Soon...
+Try it with <a href="https://mar12358.github.io/Portfolio/">gh-pages</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,9 +120,9 @@ Clone:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[future_feature_1]**
-- [ ] **[future_feature_2]**
-- [ ] **[future_feature_3]**
+- **Actual links to my own work**
+- **More style and animations/transitions**
+- **[future_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +130,7 @@ Clone:
 
 Contributions are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Mar12358/Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
