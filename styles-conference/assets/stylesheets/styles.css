@@ -668,3 +668,32 @@ textarea {
     transform: scale(1.2) rotate(360deg);
   }
 }
+
+.blend-mode {
+  filter: blur(8px);
+  position: ;
+}
+
+.invisible {
+  display: none;
+}
+
+.toggle-menu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #6070ff;
+  margin-top: 0;
+  mix-blend-mode: multiply;
+  list-style: none;
+  padding-left: 0;
+  z-index: 1;
+
+}
+
+.toggle-menu ul {
+  list-style: none;
+  width: 80%;
+  margin-top: 80px;
+  
+}
