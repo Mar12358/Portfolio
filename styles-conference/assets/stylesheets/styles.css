@@ -8,6 +8,7 @@ ul {
 
 body {
   background-color: #f1f1fc;
+  margin: 0;
 }
 
 #welcome {
@@ -51,10 +52,6 @@ header {
   font-size: 32px;
   text-decoration: none;
   font-weight: 600;
-}
-
-.close-image {
-  
 }
 
 .logo {
@@ -695,14 +692,23 @@ textarea {
 }
 
 .toggle-menu ul {
-    
+  margin-top: 8%;
 }
 
 .invisible {
   display: none;
 }
+
 #mobile-menu_list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+#close-image_li {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
 }
