@@ -702,6 +702,9 @@ textarea {
   visibility: visible;
   transition: opacity 0.5s ease-in, visibility 0s 0s;
 }
+.display-none {
+  display: none;
+}
 
 #mobile-menu_list {
   display: flex;

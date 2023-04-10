@@ -8,7 +8,7 @@ function clickMenu() {
   menuList.classList.toggle('visible');
   menuList.classList.toggle('invisible');
   for (let i = 0; i < restOfPage.length; i += 1) {
-    restOfPage[i].classList.toggle('invisible');
+    restOfPage[i].classList.toggle('display-none');
   }
 }
 
