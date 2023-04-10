@@ -145,7 +145,7 @@ li {
   margin-bottom: 1%;
 }
 
-#work {
+.work {
   display: grid;
   grid-template-rows: repeat(4, auto);
 }
@@ -528,7 +528,7 @@ textarea {
     justify-content: flex-end;
   }
 
-  #work {
+  .work {
     grid-template-rows: repeat(4, auto);
   }
 
