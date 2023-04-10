@@ -673,7 +673,6 @@ textarea {
   filter: blur(8px);
 }
 
-
 .toggle-menu {
   position: absolute;
   height: 100%;
@@ -684,14 +683,12 @@ textarea {
   list-style: none;
   padding-left: 0;
   z-index: 1;
-
 }
 
 .toggle-menu ul {
   list-style: none;
   width: 80%;
   margin-top: 80px;
-  
 }
 
 .invisible {
