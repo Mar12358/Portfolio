@@ -13,6 +13,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Presentation](#presentation)  
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -73,6 +74,13 @@ This is my own portfolio websites
 Try it with <a href="https://mar12358.github.io/Portfolio/">gh-pages</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Presentation <a name="presentation"></a>
+
+See this <a href="https://www.loom.com/share/b5bb67f5bc9842f69eb0e5038309bf28">walkthrough video</a> communicating some technical concepts.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
