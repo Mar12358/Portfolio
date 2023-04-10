@@ -671,12 +671,8 @@ textarea {
 
 .blend-mode {
   filter: blur(8px);
-  position: ;
 }
 
-.invisible {
-  display: none;
-}
 
 .toggle-menu {
   position: absolute;
@@ -696,4 +692,8 @@ textarea {
   width: 80%;
   margin-top: 80px;
   
+}
+
+.invisible {
+  display: none;
 }
