@@ -15,13 +15,21 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <div class="toggle-menu invisible">
+      <ul id="mobile-menu_list">
+        <li id="close-image_li"><img class="mobile-menu_link" src="styles-conference/assets/Icon-Cancel.svg" alt=""></li>
+        <li><a class="mobile-menu_link" href="#work">Portfolio</a><br></li>
+        <li><a class="mobile-menu_link" href="#about">About</a><br></li>
+        <li><a class="mobile-menu_link" href="#contact_section">Contact</a></li>
+      </ul>
+    </div>
     <section id="welcome">
       <div class="app-wrap">
         <header>
           <a class="logo" href="#">My Logo</a>
           <nav class="nav-bar">
             <div class="menu">
-              <img class="menu" src="styles-conference/assets/Union.png" alt="menu"/>
+              <img id ="menu-button" class="menu" src="styles-conference/assets/Union.png" alt="menu"/>
               <ul id="menu_list">
                 <li><a class="menu_link" href="#work">Portfolio</a></li>
                 <li><a class="menu_link" href="#about">About</a></li>
@@ -30,7 +38,7 @@
             </div>
           </nav>
         </header>
-        <div class="content welcome_content">
+          <div class="content welcome_content">
           <h1 id="home_salute" class="welcome_salute salute">I'm Martin.</br> Glad to see you!</h1>
             <p class="description">
               I’m a software developer! I can help you build a product , feature
@@ -59,7 +67,8 @@
         </div>
       </div>
     </section>
-    <div id="work">
+    
+    <div id="work" class="work toggle-section">
       <section id="tonic1">
         <div class="card">
           
@@ -162,7 +171,7 @@
         </div>
       </section>
     </div>
-    <section id="about" class="about_my_self">
+    <section id="about" class="about_my_self toggle-section">
       <div class="content content_about_self">
         <h2 class="salute">About Myself</h2>
         <p id="about_description" class="description">
@@ -224,7 +233,7 @@
         </ul>
       </div>
     </section>
-    <section id="contact_section">
+    <section id="contact_section" class="toggle-section">
       <section class="contact">
         <div class="form_header">
           <h2>Contact me</h2>
@@ -270,4 +279,5 @@
       </section>
     </section>
   </body>
+  <script src="main.js"></script>
 </html>
