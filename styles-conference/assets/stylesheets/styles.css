@@ -50,14 +50,14 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 32px;
   text-decoration: none;
-  padding-left: 30px;
+  margin-left: 30px;
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .close-image {
   float: right;
   margin-top: -40px;
- 
 }
 
 .logo {
