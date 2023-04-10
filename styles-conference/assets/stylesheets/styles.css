@@ -38,12 +38,8 @@ header {
 }
 
 .menu {
-  position: absolute;
-  float: right;
-  margin-top: 8px;
-  width: 24px;
-  height: 24px;
-  right: 15px;
+  margin-top: 9px;
+  height: 17px;
 }
 
 .mobile-menu_link {
