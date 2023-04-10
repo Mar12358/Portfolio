@@ -6,7 +6,6 @@ let restOfPage = document.querySelectorAll('.toggle-section');
 function clickMenu() {
   welcomePage.classList.toggle('blend-mode');
   menuList.classList.toggle('invisible');
-  console.log(welcomePage.classList);
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('invisible');
   }
