@@ -691,6 +691,25 @@ textarea {
   margin-top: 8%;
 }
 
+.popup-window {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-card {
+  height: 86%;
+  width: 91%;
+  background-color: #fff;
+  border-radius: 4vw;
+  border: 1px solid #dfe1e6;
+}
+
 .invisible {
   opacity: 0;
   visibility: hidden;

@@ -21,8 +21,12 @@ for (let j = 0; j < menuLink.length; j += 1) {
   menuLink[j].addEventListener('click', clickMenu);
 }
 
+const popupWindowDiv = document.querySelector('.popup-window');
 function popupWindow() {
   welcomePage.classList.toggle('blend-mode');
+  popupWindowDiv.classList.toggle('visible');
+  popupWindowDiv.classList.toggle('invisible');
+  // console.log(popupWindowDiv.classList)
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('display-none');
   }
@@ -31,5 +35,5 @@ function popupWindow() {
 const projects = document.querySelectorAll('.card_image');
 for (let i = 0; i < projects.length; i += 1) {
   projects[i].addEventListener('click', popupWindow);
-  console.log(projects[i].classList);
+  // console.log(projects[i].classList);
 }
