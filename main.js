@@ -21,8 +21,8 @@ for (let j = 0; j < menuLink.length; j += 1) {
   menuLink[j].addEventListener('click', clickMenu);
 }
 
-/*Create Project List of Objects*/
-let projectList = [
+/* Create Project List of Objects */
+const projectList = [
   {
     id: 'tonic1',
     name: 'Facebook 360',
@@ -30,7 +30,7 @@ let projectList = [
     featuredImage: 'styles-conference/assets/popup_img1.svg',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Mar12358/Portfolio'
+    sourceLink: 'https://github.com/Mar12358/Portfolio',
   },
   {
     id: 'stories1',
@@ -39,7 +39,7 @@ let projectList = [
     featuredImage: 'styles-conference/assets/popup_img1.svg',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Mar12358/Portfolio'
+    sourceLink: 'https://github.com/Mar12358/Portfolio',
   },
   {
     id: 'tonic2',
@@ -48,7 +48,7 @@ let projectList = [
     featuredImage: 'styles-conference/assets/popup_img1.svg',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Mar12358/Portfolio'
+    sourceLink: 'https://github.com/Mar12358/Portfolio',
   },
   {
     id: 'stories2',
@@ -57,10 +57,7 @@ let projectList = [
     featuredImage: 'styles-conference/assets/popup_img1.svg',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Mar12358/Portfolio'
-  }
+    sourceLink: 'https://github.com/Mar12358/Portfolio',
+  },
 
-]
-
-
-console.log(projectList);
+];
