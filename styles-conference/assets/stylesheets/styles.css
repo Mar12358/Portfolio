@@ -262,6 +262,17 @@ li {
   transition-property: background-color, color, transform;
   transition-duration: 0.5s;
 }
+.card_button {
+  color: #396df2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  transition-property: background-color, color, transform;
+  transition-duration: 0.5s;
+  display: flex;
+}
 
 .submit_button {
   width: 142px;
@@ -414,7 +425,8 @@ textarea {
 
 .see_project_button:hover,
 .get_resume_button:hover,
-.submit_button:hover {
+.submit_button:hover,
+.card_button:hover {
   transform: scale(1.1);
   background-color: #6070ff;
   color: #fff;
@@ -422,7 +434,8 @@ textarea {
 
 .see_project_button:disabled,
 .get_resume_button:disabled,
-.submit_button:disabled {
+.submit_button:disabled,
+.card_button:disabled {
   background-color: #e5e5e5;
   color: #5e6c84;
   border: 1px solid #c1c7d0;
@@ -430,7 +443,8 @@ textarea {
 
 .see_project_button:active,
 .get_resume_button:active,
-.submit_button:active {
+.submit_button:active,
+.card_button:active {
   background-color: #2230d2;
   color: #fff;
 }
@@ -448,9 +462,11 @@ textarea {
   height: auto;
 }
 
-.title_popup-card {
+.title_popup-card, .card_buttons {
   display: flex;
   justify-content: space-between;
+  width: 97%;
+  align-self: center;
 }
 
 .title_popup-card h2 {
@@ -711,12 +727,20 @@ textarea {
   align-items: center;
 }
 
+.popup-img {
+  width: 100%;
+}
+
 .popup-card {
   height: 86%;
-  width: 91%;
+  width: 80%;
   background-color: #fff;
   border-radius: 4vw;
   border: 1px solid #dfe1e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px;
 }
 
 .invisible {
