@@ -24,10 +24,18 @@ for (let j = 0; j < menuLink.length; j += 1) {
 }
 
 const popupWindowDiv = document.querySelector('.popup-window');
-function popupWindow(project) {
+
+function togglePopUp() {
   welcomePage.classList.toggle('blend-mode');
   popupWindowDiv.classList.toggle('visible');
   popupWindowDiv.classList.toggle('invisible');
+  for (let i = 0; i < restOfPage.length; i += 1) {
+    restOfPage[i].classList.toggle('display-none');
+  }
+}
+
+function popupWindow(project) {
+  togglePopUp();
   console.log(project);
   popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
   popupWindowDiv.children[0].children[1].children[0].children[0].innerHTML = project.categ[0];
@@ -36,18 +44,24 @@ function popupWindow(project) {
   popupWindowDiv.children[0].children[2].children[0].src = project.mobileImage;
   popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
   console.log(project.technologies.length)
-  for (let i = 0; i < project.technologies.length; i += 1) {
-    popupWindowDiv.children[0].children[4].insertAdjacentHTML('beforeend','<li><p>'+project.technologies[i]+'</p></li>')
-  }
+  popupWindowDiv.children[0].children[4].innerHTML = '<li><p>'+project.technologies[0]+'</p></li>';
+  let cantCateg = 3;
 
-  // console.log(popupWindowDiv.classList)
-  for (let i = 0; i < restOfPage.length; i += 1) {
-    restOfPage[i].classList.toggle('display-none');
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    cantCateg = project.technologies.length;
+  }
+  for (let i = 1; i < cantCateg; i += 1) {
+    popupWindowDiv.children[0].children[4].insertAdjacentHTML('beforeend','<li><p>'+project.technologies[i]+'</p></li>')
   }
 }
 
 const projects = document.querySelectorAll('.card_image');
-for (let i = 0; i < projects.length; i += 1) {
-  projects[i].addEventListener('click', popupWindow.bind(null, projectList.find((p) => p.id === projects[i].alt)));
+const buttons = document.querySelectorAll('.see_project_button');
+for (let i = 0; i < buttons.length; i += 1) {
+  let projectId = projectList.find((p) => p.id === projects[i].alt)
+  buttons[i].addEventListener('click', popupWindow.bind(null, projectId));
+  projects[i].addEventListener('click', popupWindow.bind(null, projectId));
   // console.log(projects[i].alt);
 }
+const closePopup = document.querySelector('.imgButtonClose')
+closePopup.addEventListener('click', togglePopUp);
