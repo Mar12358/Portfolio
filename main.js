@@ -34,6 +34,8 @@ function popupWindow(project) {
   popupWindowDiv.children[0].children[1].children[2].children[0].innerHTML = project.categ[1];
   popupWindowDiv.children[0].children[1].children[4].children[0].innerHTML = project.categ[2];
   popupWindowDiv.children[0].children[2].children[0].src = project.mobileImage;
+  popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
+
   // console.log(popupWindowDiv.classList)
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('display-none');
