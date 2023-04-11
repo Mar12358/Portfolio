@@ -229,6 +229,7 @@ li {
 .categories {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 11px;
 }
 
@@ -470,7 +471,6 @@ textarea {
   margin: 0;
 }
 
-
 .blend-mode {
   filter: blur(8px);
 }
@@ -488,7 +488,6 @@ textarea {
   margin-top: 8%;
 }
 
-
 .popup-window {
   position: absolute;
   height: 100%;
@@ -504,7 +503,6 @@ textarea {
   width: 100%;
 }
 
-
 .popup-card {
   height: 86%;
   width: 84%;
@@ -517,7 +515,6 @@ textarea {
   padding: 16px;
 }
 
-
 .invisible {
   opacity: 0;
   visibility: hidden;
@@ -529,7 +526,6 @@ textarea {
   visibility: visible;
   transition: opacity 0.5s ease-in, visibility 0s 0s;
 }
-
 
 .display-none {
   display: none;
@@ -549,10 +545,38 @@ textarea {
   padding-right: 15px;
 }
 
-
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
+  }
+
+  .title_popup-card,
+  .three-cols {
+    grid-column: 1 / 9;
+  }
+
+  .descr-desk {
+    grid-column: 1 / 7;
+    grid-row: 4 / 9;
+  }
+
+  .grid7to9,
+  .card_buttons {
+    grid-column: 8 / 9;
+  }
+
+  .popup-window {
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
   }
 
   .app-wrap {
@@ -563,11 +587,14 @@ textarea {
     width: 80%;
     height: 88%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    border-radius: 2vw;
+    grid-template-columns: auto auto auto;
   }
 
   .popup-img {
-   width: auto; 
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   #welcome {
@@ -785,9 +812,8 @@ textarea {
   .logo:hover {
     transform: scale(1.2) rotate(360deg);
   }
+
   .display-none {
     display: none;
   }
 }
-
-

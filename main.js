@@ -36,7 +36,6 @@ function togglePopUp() {
 
 function popupWindow(project) {
   togglePopUp();
-  console.log(project);
   popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
   const [categ1, categ2, categ3] = project.categ;
   popupWindowDiv.children[0].children[1].children[0].children[0].innerHTML = categ1;
@@ -44,12 +43,14 @@ function popupWindow(project) {
   popupWindowDiv.children[0].children[1].children[4].children[0].innerHTML = categ3;
   popupWindowDiv.children[0].children[2].children[0].src = project.mobileImage;
   popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
-  console.log(project.technologies.length);
   popupWindowDiv.children[0].children[4].innerHTML = `<li><p>${project.technologies[0]}</p></li>`;
-  let cantCateg = 3;
 
+  let cantCateg = 3;
   if (window.matchMedia('(min-width: 768px)').matches) {
     cantCateg = project.technologies.length;
+    popupWindowDiv.children[0].children[3].innerHTML = project.deskDescription;
+  } else {
+    popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
   }
   for (let i = 1; i < cantCateg; i += 1) {
     popupWindowDiv.children[0].children[4].insertAdjacentHTML('beforeend', `<li><p>${project.technologies[i]}</p></li>`);
