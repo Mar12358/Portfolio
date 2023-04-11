@@ -20,3 +20,16 @@ const menuLink = document.querySelectorAll('.mobile-menu_link');
 for (let j = 0; j < menuLink.length; j += 1) {
   menuLink[j].addEventListener('click', clickMenu);
 }
+
+function popupWindow() {
+  welcomePage.classList.toggle('blend-mode');
+  for (let i = 0; i < restOfPage.length; i += 1) {
+    restOfPage[i].classList.toggle('display-none');
+  }
+}
+
+const projects = document.querySelectorAll('.card_image');
+for (let i = 0; i < projects.length; i += 1) {
+  projects[i].addEventListener('click', popupWindow);
+  console.log(projects[i].classList);
+}
