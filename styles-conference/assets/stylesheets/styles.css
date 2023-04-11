@@ -262,6 +262,7 @@ li {
   justify-content: center;
   transition-property: background-color, color, transform;
   transition-duration: 0.5s;
+  white-space: nowrap;
 }
 
 .card_button {
@@ -469,6 +470,86 @@ textarea {
   margin: 0;
 }
 
+
+.blend-mode {
+  filter: blur(8px);
+}
+
+.toggle-menu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.toggle-menu ul {
+  margin-top: 8%;
+}
+
+
+.popup-window {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-img {
+  width: 100%;
+}
+
+
+.popup-card {
+  height: 86%;
+  width: 84%;
+  background-color: #fff;
+  border-radius: 4vw;
+  border: 1px solid #dfe1e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s 2s;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in, visibility 0s 0s;
+}
+
+
+.display-none {
+  display: none;
+}
+
+#mobile-menu_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+#close-image_li {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
@@ -476,6 +557,17 @@ textarea {
 
   .app-wrap {
     align-items: center;
+  }
+
+  .popup-card {
+    width: 80%;
+    height: 88%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .popup-img {
+   width: auto; 
   }
 
   #welcome {
@@ -693,78 +785,9 @@ textarea {
   .logo:hover {
     transform: scale(1.2) rotate(360deg);
   }
+  .display-none {
+    display: none;
+  }
 }
 
-.blend-mode {
-  filter: blur(8px);
-}
 
-.toggle-menu {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #6070ff;
-  mix-blend-mode: multiply;
-  z-index: 1;
-}
-
-.toggle-menu ul {
-  margin-top: 8%;
-}
-
-.popup-window {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-img {
-  width: 100%;
-}
-
-.popup-card {
-  height: 86%;
-  width: 84%;
-  background-color: #fff;
-  border-radius: 4vw;
-  border: 1px solid #dfe1e6;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 16px;
-}
-
-.invisible {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0s 2s;
-}
-
-.visible {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease-in, visibility 0s 0s;
-}
-
-.display-none {
-  display: none;
-}
-
-#mobile-menu_list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-}
-
-#close-image_li {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 15px;
-}
