@@ -30,6 +30,7 @@ function popupWindow(project) {
   popupWindowDiv.classList.toggle('invisible');
   console.log(project);
   popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
+  popupWindowDiv.children[0].children[1].children[1].innerHTML = project.categ[0];
   // console.log(popupWindowDiv.classList)
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('display-none');
