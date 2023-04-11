@@ -1,4 +1,4 @@
-const projectList = [
+export const projectList = [
   {
     id: 'tonic1',
     name: 'Facebook 360',

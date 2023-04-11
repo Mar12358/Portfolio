@@ -1,3 +1,5 @@
+import { projectList } from './create_objects.js';
+
 const welcomePage = document.querySelector('#welcome');
 const ham = document.querySelector('#menu-button');
 let menuList = document.querySelector('.toggle-menu');
@@ -22,10 +24,12 @@ for (let j = 0; j < menuLink.length; j += 1) {
 }
 
 const popupWindowDiv = document.querySelector('.popup-window');
-function popupWindow() {
+function popupWindow(project) {
   welcomePage.classList.toggle('blend-mode');
   popupWindowDiv.classList.toggle('visible');
   popupWindowDiv.classList.toggle('invisible');
+  console.log(project);
+  popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
   // console.log(popupWindowDiv.classList)
   for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('display-none');
@@ -34,6 +38,6 @@ function popupWindow() {
 
 const projects = document.querySelectorAll('.card_image');
 for (let i = 0; i < projects.length; i += 1) {
-  projects[i].addEventListener('click', popupWindow);
-  // console.log(projects[i].classList);
+  projects[i].addEventListener('click', popupWindow.bind(null, projectList.find(p => p.id === projects[i].alt)));
+  //console.log(projects[i].alt);
 }

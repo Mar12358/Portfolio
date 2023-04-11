@@ -448,6 +448,15 @@ textarea {
   height: auto;
 }
 
+.title_popup-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_popup-card h2 {
+  margin: 0;
+}
+
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
