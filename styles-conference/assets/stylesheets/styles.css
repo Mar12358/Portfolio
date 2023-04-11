@@ -564,6 +564,7 @@ textarea {
   .card_buttons {
     grid-column: 8 / 9;
   }
+
   .separator-line {
     width: inherit;
   }
