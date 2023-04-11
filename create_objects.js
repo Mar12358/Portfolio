@@ -9,6 +9,7 @@ const projectList = [
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
     sourceLink: 'https://github.com/Mar12358/Portfolio',
+    categ: ['FACEBOOK', 'Full Stack Dev', '2015'],
   },
   {
     id: 'stories1',
@@ -20,6 +21,7 @@ const projectList = [
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
     sourceLink: 'https://github.com/Mar12358/Portfolio',
+    categ: ['Uber', 'Lead Developer', '2018'],
   },
   {
     id: 'tonic2',
@@ -31,6 +33,7 @@ const projectList = [
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
     sourceLink: 'https://github.com/Mar12358/Portfolio',
+    categ: ['CANOPY', 'Back End Dev', '2015'],
   },
   {
     id: 'stories2',
@@ -42,6 +45,7 @@ const projectList = [
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://mar12358.github.io/Portfolio/',
     sourceLink: 'https://github.com/Mar12358/Portfolio',
+    categ: ['FACEBOOK', 'Full Stack Dev', '2015'],
   },
 ];
 

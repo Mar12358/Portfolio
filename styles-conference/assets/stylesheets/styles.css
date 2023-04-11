@@ -114,7 +114,7 @@ li {
 .icons,
 .card_ul,
 .categories {
-  padding-inline-start: 1px;
+  padding-inline-start: 0;
 }
 
 .icons {
