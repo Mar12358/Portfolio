@@ -249,7 +249,7 @@ li {
 .see_project_button,
 .get_resume_button,
 .submit_button,
- .card_button {
+.card_button {
   color: #396df2;
   display: flex;
   text-decoration: none;
@@ -266,7 +266,7 @@ li {
 
 .card_button {
   justify-content: space-around;
-  width:47%;
+  width: 47%;
 }
 
 .submit_button {
@@ -457,7 +457,8 @@ textarea {
   height: auto;
 }
 
-.title_popup-card, .card_buttons {
+.title_popup-card,
+.card_buttons {
   display: flex;
   justify-content: space-between;
   width: 97%;
