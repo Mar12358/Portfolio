@@ -1,4 +1,4 @@
-import { projectList } from './create_objects.js';
+import projectList from './create_objects.js';
 
 const welcomePage = document.querySelector('#welcome');
 const ham = document.querySelector('#menu-button');
@@ -38,6 +38,6 @@ function popupWindow(project) {
 
 const projects = document.querySelectorAll('.card_image');
 for (let i = 0; i < projects.length; i += 1) {
-  projects[i].addEventListener('click', popupWindow.bind(null, projectList.find(p => p.id === projects[i].alt)));
-  //console.log(projects[i].alt);
+  projects[i].addEventListener('click', popupWindow.bind(null, projectList.find((p) => p.id === projects[i].alt)));
+  // console.log(projects[i].alt);
 }
