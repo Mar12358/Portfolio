@@ -505,7 +505,7 @@ textarea {
 
 .popup-card {
   height: 86%;
-  width: 84%;
+  width: 81%;
   background-color: #fff;
   border-radius: 4vw;
   border: 1px solid #dfe1e6;
@@ -563,6 +563,9 @@ textarea {
   .grid7to9,
   .card_buttons {
     grid-column: 8 / 9;
+  }
+  .separator-line {
+    width: inherit;
   }
 
   .popup-window {
