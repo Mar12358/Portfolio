@@ -423,10 +423,14 @@ textarea {
 
 .see_project_button:hover,
 .get_resume_button:hover,
-.submit_button:hover,
 .card_button:hover {
   transform: scale(1.1);
   background-color: #6070ff;
+  color: #fff;
+}
+.submit_button:hover {  
+  transform: scale(1.1);
+  background-color: #8793ff;
   color: #fff;
 }
 
