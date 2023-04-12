@@ -68,12 +68,14 @@ const closePopup = document.querySelector('.imgButtonClose');
 closePopup.addEventListener('click', togglePopUp);
 
 const form = document.forms[0];
-console.log(form);
 form.addEventListener('submit', (event) => {
-  const email = form.elements['mail'].value;
+  const email = form.elements.mail.value;
   if (email === email.toLocaleLowerCase()) {
+    smallMsg.classList.remove('visible');
     form.submit();
   } else {
+    const smallMsg = document.querySelector('small');
+    smallMsg.innerHTML = 'Please, use lower case for email input';
     event.preventDefault();
   }
 });
