@@ -70,7 +70,8 @@ closePopup.addEventListener('click', togglePopUp);
 const form = document.forms[0];
 console.log(form);
 form.addEventListener('submit', (event) => {
-  if ("Asd" === "Asd".toLocaleLowerCase()) {
+  const email = form.elements['mail'].value;
+  if (email === email.toLocaleLowerCase()) {
     form.submit();
   } else {
     event.preventDefault();
