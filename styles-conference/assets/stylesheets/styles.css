@@ -83,6 +83,7 @@ header {
   line-height: 52px;
 }
 
+small,
 .description,
 .salute,
 .lets_connect,
@@ -422,10 +423,15 @@ textarea {
 
 .see_project_button:hover,
 .get_resume_button:hover,
-.submit_button:hover,
 .card_button:hover {
   transform: scale(1.1);
   background-color: #6070ff;
+  color: #fff;
+}
+
+.submit_button:hover {
+  transform: scale(1.1);
+  background-color: #8793ff;
   color: #fff;
 }
 
@@ -545,9 +551,42 @@ textarea {
   padding-right: 15px;
 }
 
+.button {
+  display: flex;
+}
+
+small {
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 112, 112);
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 3px 10px 2px 10px;
+}
+
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
+  }
+
+  .button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 447px;
+  }
+
+  .submit_button {
+    grid-column: 2;
+  }
+
+  small {
+    grid-column: 3;
+    white-space: wrap;
+    margin-left: 5px;
+    margin-right: 0;
+    border-radius: 1vw;
   }
 
   .title_popup-card,

@@ -63,7 +63,20 @@ for (let i = 0; i < buttons.length; i += 1) {
   const projectId = projectList.find((p) => p.id === projects[i].alt);
   buttons[i].addEventListener('click', popupWindow.bind(null, projectId));
   projects[i].addEventListener('click', popupWindow.bind(null, projectId));
-  // console.log(projects[i].alt);
 }
 const closePopup = document.querySelector('.imgButtonClose');
 closePopup.addEventListener('click', togglePopUp);
+
+const form = document.forms[0];
+form.addEventListener('submit', (event) => {
+  const email = form.elements.mail.value;
+  const smallMsg = document.querySelector('small');
+  if (email === email.toLocaleLowerCase()) {
+    smallMsg.classList.remove('visible');
+    form.submit();
+  } else {
+    smallMsg.innerHTML = 'Please, use lower case for email input';
+    smallMsg.classList.add('visible');
+    event.preventDefault();
+  }
+});
