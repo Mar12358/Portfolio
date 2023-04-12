@@ -428,7 +428,8 @@ textarea {
   background-color: #6070ff;
   color: #fff;
 }
-.submit_button:hover {  
+
+.submit_button:hover {
   transform: scale(1.1);
   background-color: #8793ff;
   color: #fff;
@@ -575,7 +576,7 @@ small {
     grid-template-columns: 1fr 1fr 1fr;
     width: 447px;
   }
-  
+
   .submit_button {
     grid-column: 2;
   }
@@ -859,5 +860,3 @@ small {
     display: none;
   }
 }
-
-
