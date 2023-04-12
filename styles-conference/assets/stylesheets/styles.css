@@ -83,6 +83,7 @@ header {
   line-height: 52px;
 }
 
+small,
 .description,
 .salute,
 .lets_connect,
@@ -820,4 +821,17 @@ textarea {
   .display-none {
     display: none;
   }
+}
+
+.button {
+  display: flex;
+}
+small {
+  align-self: center;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 112, 112);
+  border-radius: 1vw;
+  font-size: medium;
+  padding: 3px;
 }
