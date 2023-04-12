@@ -550,9 +550,38 @@ textarea {
   padding-right: 15px;
 }
 
+.button {
+  display: flex;
+}
+
+small {
+  align-self: center;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 112, 112);
+  border-radius: 1vw;
+  font-size: 13px;
+  padding: 3px;
+}
+
 @media screen and (min-device-width: 768px) {
   .content {
     width: 67%;
+  }
+
+  .button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 55%;
+  }
+  
+  .submit_button {
+    grid-column: 2;
+  }
+
+  small {
+    grid-column: 3;
+    white-space: wrap;
   }
 
   .title_popup-card,
@@ -827,15 +856,4 @@ textarea {
   }
 }
 
-.button {
-  display: flex;
-}
-small {
-  align-self: center;
-  margin-left: 10px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(209, 112, 112);
-  border-radius: 1vw;
-  font-size: medium;
-  padding: 3px;
-}
+
