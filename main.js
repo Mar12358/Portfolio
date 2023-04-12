@@ -63,7 +63,16 @@ for (let i = 0; i < buttons.length; i += 1) {
   const projectId = projectList.find((p) => p.id === projects[i].alt);
   buttons[i].addEventListener('click', popupWindow.bind(null, projectId));
   projects[i].addEventListener('click', popupWindow.bind(null, projectId));
-  // console.log(projects[i].alt);
 }
 const closePopup = document.querySelector('.imgButtonClose');
 closePopup.addEventListener('click', togglePopUp);
+
+const form = document.forms[0];
+console.log(form);
+form.addEventListener('submit', (event) => {
+  if ("Asd" === "Asd".toLocaleLowerCase()) {
+    form.submit();
+  } else {
+    event.preventDefault();
+  }
+});
