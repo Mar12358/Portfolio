@@ -73,10 +73,12 @@ form.addEventListener('submit', (event) => {
   const smallMsg = document.querySelector('small');
   if (email === email.toLocaleLowerCase()) {
     smallMsg.classList.remove('visible');
+    smallMsg.classList.add('invisible');
     form.submit();
   } else {
     smallMsg.innerHTML = 'Please, use lower case for email input';
     smallMsg.classList.add('visible');
+    smallMsg.classList.remove('invisible');
     event.preventDefault();
   }
 });
