@@ -88,18 +88,22 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#mail');
 const msgInput = document.querySelector('#msg');
 
+nameInput.value = JSON.parse(localStorage.getItem('obj')).name
+emailInput.value = JSON.parse(localStorage.getItem('obj')).email
+msgInput.value = JSON.parse(localStorage.getItem('obj')).msg
+console.log(JSON.parse(localStorage.getItem('obj')).name)
+
 function populateStorage() {
   const obj = { name: nameInput.value, email: emailInput.value, msg: msgInput.value };
   console.log(obj)
   localStorage.setItem('obj', JSON.stringify(obj));
   const getData = JSON.parse(localStorage.getItem('obj'));
-  console.log(localStorage)
+
 }
 
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;
 msgInput.onchange = populateStorage;
-console.log(localStorage)
 // emailInput.onchange = populateStorage;
 // msgInput.onchange = populateStorage;
 // console.log(JSON.stringify(obj))
