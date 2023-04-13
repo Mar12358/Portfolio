@@ -84,37 +84,20 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#mail');
 const msgInput = document.querySelector('#msg');
 
-if (localStorage.length != 0){
-  nameInput.value = JSON.parse(localStorage.getItem('obj')).name
-  emailInput.value = JSON.parse(localStorage.getItem('obj')).email
-  msgInput.value = JSON.parse(localStorage.getItem('obj')).msg
+if (localStorage.length !== 0) {
+  nameInput.value = JSON.parse(localStorage.getItem('obj')).name;
+  emailInput.value = JSON.parse(localStorage.getItem('obj')).email;
+  msgInput.value = JSON.parse(localStorage.getItem('obj')).msg;
 }
 function populateStorage() {
   const obj = { name: nameInput.value, email: emailInput.value, msg: msgInput.value };
-  console.log(obj)
   localStorage.setItem('obj', JSON.stringify(obj));
-  const getData = JSON.parse(localStorage.getItem('obj'));
-
 }
 
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;
 msgInput.onchange = populateStorage;
-// emailInput.onchange = populateStorage;
-// msgInput.onchange = populateStorage;
-// console.log(JSON.stringify(obj))
-//localStorage.setItem('obj', JSON.stringify(obj));
-// console.log(localStorage.setItem('obj', JSON.stringify(obj)))
-// const getData = JSON.parse(localStorage.getItem('obj'))
-// console.log(getData.name)
-// console.log(getData)
-// console.log(nameInput.value);
-
-// When the user changes the content of any input field, the data is saved to the local storage.
-// When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
-// create a single JavaScript object with all the data from the entire form and save it in local storage
