@@ -74,6 +74,7 @@ form.addEventListener('submit', (event) => {
   if (email === email.toLocaleLowerCase()) {
     smallMsg.classList.remove('visible');
     smallMsg.classList.add('invisible');
+    localStorage.clear();
     form.submit();
   } else {
     smallMsg.innerHTML = 'Please, use lower case for email input';
@@ -82,3 +83,21 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#mail');
+const msgInput = document.querySelector('#msg');
+
+if (localStorage.length !== 0) {
+  nameInput.value = JSON.parse(localStorage.getItem('obj')).name;
+  emailInput.value = JSON.parse(localStorage.getItem('obj')).email;
+  msgInput.value = JSON.parse(localStorage.getItem('obj')).msg;
+}
+function populateStorage() {
+  const obj = { name: nameInput.value, email: emailInput.value, msg: msgInput.value };
+  localStorage.setItem('obj', JSON.stringify(obj));
+}
+
+nameInput.onchange = populateStorage;
+emailInput.onchange = populateStorage;
+msgInput.onchange = populateStorage;
