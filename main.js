@@ -88,15 +88,22 @@ const emailInput = document.querySelector('#mail').value;
 const msgInput = document.querySelector('#msg').value;
 
 const obj = { name: nameInput, email: emailInput, msg: msgInput };
+console.log(obj)
+// function populateStorage() {
+//   localStorage.setItem('obj', JSON.stringify(obj));
+// }
 
-function populateStorage() {
-  localStorage.setItem('obj', JSON.stringify(obj));
-}
 
-nameInput.onchange = populateStorage;
-emailInput.onchange = populateStorage;
-msgInput.onchange = populateStorage;
-console.log(nameInput.value);
+// nameInput.onchange = populateStorage;
+// emailInput.onchange = populateStorage;
+// msgInput.onchange = populateStorage;
+// console.log(JSON.stringify(obj))
+localStorage.setItem('obj', JSON.stringify(obj));
+// console.log(localStorage.setItem('obj', JSON.stringify(obj)))
+const getData = JSON.parse(localStorage.getItem('obj'))
+console.log(getData.name)
+// console.log(getData)
+// console.log(nameInput.value);
 
 // When the user changes the content of any input field, the data is saved to the local storage.
 // When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
