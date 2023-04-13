@@ -83,25 +83,30 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const nameInput = document.querySelector('#name').value;
-const emailInput = document.querySelector('#mail').value;
-const msgInput = document.querySelector('#msg').value;
 
-const obj = { name: nameInput, email: emailInput, msg: msgInput };
-console.log(obj)
-// function populateStorage() {
-//   localStorage.setItem('obj', JSON.stringify(obj));
-// }
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#mail');
+const msgInput = document.querySelector('#msg');
 
+function populateStorage() {
+  const obj = { name: nameInput.value, email: emailInput.value, msg: msgInput.value };
+  console.log(obj)
+  localStorage.setItem('obj', JSON.stringify(obj));
+  const getData = JSON.parse(localStorage.getItem('obj'));
+  console.log(localStorage)
+}
 
-// nameInput.onchange = populateStorage;
+nameInput.onchange = populateStorage;
+emailInput.onchange = populateStorage;
+msgInput.onchange = populateStorage;
+console.log(localStorage)
 // emailInput.onchange = populateStorage;
 // msgInput.onchange = populateStorage;
 // console.log(JSON.stringify(obj))
-localStorage.setItem('obj', JSON.stringify(obj));
+//localStorage.setItem('obj', JSON.stringify(obj));
 // console.log(localStorage.setItem('obj', JSON.stringify(obj)))
-const getData = JSON.parse(localStorage.getItem('obj'))
-console.log(getData.name)
+// const getData = JSON.parse(localStorage.getItem('obj'))
+// console.log(getData.name)
 // console.log(getData)
 // console.log(nameInput.value);
 
