@@ -4,9 +4,9 @@ const welcomePage = document.querySelector('#welcome');
 const ham = document.querySelector('#menu-button');
 let menuList = document.querySelector('.toggle-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
+welcomePage.classList.toggle('blend-mode');
 
 function clickMenu() {
-  welcomePage.classList.toggle('blend-mode');
   menuList.classList.toggle('visible');
   menuList.classList.toggle('invisible');
   for (let i = 0; i < restOfPage.length; i += 1) {
@@ -52,7 +52,7 @@ function popupWindow(project) {
   } else {
     popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
   }
-  for (let i = 1; i < cantCateg; i += 1) {
+  for (let i = 0; i < cantCateg; i += 1) {
     popupWindowDiv.children[0].children[4].insertAdjacentHTML('beforeend', `<li><p>${project.technologies[i]}</p></li>`);
   }
 }
