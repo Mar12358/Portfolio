@@ -224,7 +224,7 @@ li {
 }
 
 .description_cards {
-  font-size: 15px;
+  font-size: 1.7vh;
 }
 
 .categories {
@@ -465,6 +465,16 @@ textarea {
   height: auto;
 }
 
+.card_image1 {
+  width: 91%;
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  height: auto;
+  background-color: rgb(228, 113, 113);
+  border-radius: 12px;
+}
+
 .title_popup-card,
 .card_buttons {
   display: flex;
@@ -507,6 +517,14 @@ textarea {
 
 .popup-img {
   width: 100%;
+}
+
+.popup-img1 {
+  width: 85%;
+  background-color: rgb(228, 113, 113);
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .popup-card {

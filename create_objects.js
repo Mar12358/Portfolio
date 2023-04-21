@@ -1,14 +1,14 @@
 const projectList = [
   {
     id: 'tonic1',
-    name: 'Facebook 360',
+    name: 'Swing Steps Library',
     deskDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
     mobileDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    deskImage: 'styles-conference/assets/popup_img1.svg',
-    mobileImage: 'styles-conference/assets/tonic1_image.svg',
+    deskImage: 'styles-conference/assets/capston1.png',
+    mobileImage: 'styles-conference/assets/capston1.png',
     technologies: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap'],
-    liveLink: 'https://mar12358.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Mar12358/Portfolio',
+    liveLink: 'https://mar12358.github.io/capstone-lh/',
+    sourceLink: 'https://github.com/Mar12358/capstone-lh',
     categ: ['FACEBOOK', 'Full Stack Dev', '2015'],
   },
   {

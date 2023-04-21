@@ -44,7 +44,8 @@ function popupWindow(project) {
   popupWindowDiv.children[0].children[2].children[0].src = project.mobileImage;
   popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
   popupWindowDiv.children[0].children[4].innerHTML = `<li><p>${project.technologies[0]}</p></li>`;
-
+  popupWindowDiv.children[0].children[8].children[0].href = project.liveLink;
+  popupWindowDiv.children[0].children[8].children[1].href = project.sourceLink;
   let cantCateg = 3;
   if (window.matchMedia('(min-width: 768px)').matches) {
     cantCateg = project.technologies.length;
