@@ -465,15 +465,7 @@ textarea {
   height: auto;
 }
 
-.card_image1 {
-  width: 91%;
-  padding: 4%;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  height: auto;
-  background-color: rgb(228, 113, 113);
-  border-radius: 12px;
-}
+
 
 .title_popup-card,
 .card_buttons {
@@ -517,6 +509,17 @@ textarea {
 
 .popup-img {
   width: 100%;
+}
+
+.card_image1 {
+  width: 91%;
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  height: auto;
+  background-color: rgb(228, 113, 113);
+  border-radius: 12px;
+  
 }
 
 .popup-img1 {
