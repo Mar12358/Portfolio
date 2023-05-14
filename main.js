@@ -92,8 +92,7 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#mail');
 const msgInput = document.querySelector('#msg');
 
-if (localStorage['obj']) {
-  console.log(localStorage['obj'])
+if (localStorage.obj) {
   nameInput.value = JSON.parse(localStorage.getItem('obj')).name;
   emailInput.value = JSON.parse(localStorage.getItem('obj')).email;
   msgInput.value = JSON.parse(localStorage.getItem('obj')).msg;
