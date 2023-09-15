@@ -517,17 +517,34 @@ textarea {
   padding-top: 8%;
   padding-bottom: 8%;
   height: auto;
-  background-color: rgb(228, 113, 113);
+  background-color: rgb(255, 165, 165);
   border-radius: 12px;
-  
+}
+
+.card_image2 {
+  width: 91%;
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  height: auto;
+  background-color: rgb(181, 211, 255);
+  border-radius: 12px;
 }
 
 .popup-img1 {
   width: 85%;
-  background-color: rgb(228, 113, 113);
+  background-color: rgb(255, 165, 165);
   padding: 4%;
   padding-top: 8%;
   padding-bottom: 8%;
+}
+
+.popup-img2 {
+  width: 85%;
+  background-color: rgb(181, 211, 255);
+  padding: 4%;
+  padding-top: 9%;
+  padding-bottom: 9%;
 }
 
 .popup-card {
