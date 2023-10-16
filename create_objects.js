@@ -1,6 +1,6 @@
 const projectList = [
   {
-    id: 'ssl',
+    id: 'swing-steps-library',
     name: 'Swing Steps Library',
     deskDescription: 'Swing dance is an umbrella term for a group of Afro-American dances that developed with the swing style of jazz music in the 1920s–1950s. Discover the magic of swing dancing from home with our online course. Learn basic steps, advanced techniques, and tips to move with confidence. Our course is designed for all levels of dancers. Experienced instructors guide you through each step of the way. Master the art of partner dancing and move with grace and confidence. Our flexible learning platform allows you to learn at your own pace. Start your swing dancing journey today and become a confident and skilled dancer.',
     mobileDescription: 'Swing dance is an umbrella term for a group of Afro-American dances that developed with the swing style of jazz music in the 1920s–1950s. Discover the magic of swing dancing from home with our online course. Learn basic steps, advanced techniques, and tips to move with confidence.',
@@ -12,19 +12,19 @@ const projectList = [
     categ: ['Web App', 'Front-end', '2023'],
   },
   {
-    id: 'rl',
+    id: 'reserve-lectures',
     name: 'Reserve Lectures',
     deskDescription: 'This is a 2 in 1 Web App (Full Stack) built connecting React/Redux JS (Front-End) with Ruby on Rails API (Back-End). It counts with User Authentication (Sign Up and Sign In) implemented with Devise. You can add and remove both Lectures and Reservations.',
     mobileDescription: 'This is a 2 in 1 web app (Full Stack) built connecting React/Redux JS (Front-End) with Ruby on Rails API (Back-End). You can Add/Remove Lectures and make Reservations',
-    deskImage: 'styles-conference/assets/popup_img1.svg',
-    mobileImage: 'styles-conference/assets/stories1_image.svg',
+    deskImage: 'styles-conference/assets/baa_img.png',
+    mobileImage: 'styles-conference/assets/baa_img.png',
     technologies: ['HTML', 'Ruby on rails', 'React.js', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://github.com/Mar12358/book-an-appointment',
     sourceLink: 'https://github.com/Mar12358/book-an-appointment',
     categ: ['Teamwork', 'Full Stack', '2023'],
   },
   {
-    id: 'sth',
+    id: 'space-hub',
     name: 'Space Traveler\'s Hub',
     deskDescription: "Space Travelers' Hub is a web application that uses real live data from the SpaceX API. It provides information on commercial and scientific space travel services. The application also allows users to book rockets and join selected space missions.",
     mobileDescription: "Space Travelers' Hub is a web application that uses real live data from the SpaceX API.",

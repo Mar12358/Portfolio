@@ -696,15 +696,15 @@ small {
     border-radius: 2vw;
   }
 
-  #tonic1 {
+  #swing-steps-library {
     order: 1;
   }
 
-  #stories1 {
+  #reserve-lectures {
     order: 2;
   }
 
-  #img_link_storie1,
+  #img_link_reserve_lectures,
   #img_link_storie2 {
     order: 1;
   }
