@@ -517,7 +517,7 @@ textarea {
   padding-top: 8%;
   padding-bottom: 8%;
   height: auto;
-  background-color: rgb(255, 165, 165);
+  background-color: rgb(255, 188, 188);
   border-radius: 12px;
 }
 
@@ -527,7 +527,17 @@ textarea {
   padding-top: 8%;
   padding-bottom: 8%;
   height: auto;
-  background-color: rgb(181, 211, 255);
+  background-color: rgb(208, 255, 199);
+  border-radius: 12px;
+}
+
+.card_image3 {
+  width: 91%;
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  height: auto;
+  background-color: rgb(207, 226, 255);
   border-radius: 12px;
 }
 
