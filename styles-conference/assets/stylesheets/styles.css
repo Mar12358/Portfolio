@@ -614,7 +614,7 @@ small {
   padding: 3px 10px 2px 10px;
 }
 
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   .content {
     width: 67%;
   }
