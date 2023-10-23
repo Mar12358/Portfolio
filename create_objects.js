@@ -38,8 +38,8 @@ const projectList = [
   {
     id: 'recipe-app',
     name: 'Recipe App',
-    deskDescription: "With Recipe-App, you can add Foods, create inventories, recipes, make them public/private, generate shopping lists. Built With Ruby on Rails, Styled with Bootstrap.",
-    mobileDescription: "With Recipe-App, you can add Foods, create inventories, recipes, make them public/private, generate shopping lists. Built With Ruby on Rails, Styled with Bootstrap.",
+    deskDescription: 'With Recipe-App, you can add Foods, create inventories, recipes, make them public/private, generate shopping lists. Built With Ruby on Rails, Styled with Bootstrap.',
+    mobileDescription: 'With Recipe-App, you can add Foods, create inventories, recipes, make them public/private, generate shopping lists. Built With Ruby on Rails, Styled with Bootstrap.',
     deskImage: 'styles-conference/assets/recipe-app_img.png',
     mobileImage: 'styles-conference/assets/recipe-app_img.png',
     technologies: ['Ruby on rails', 'ERB', 'Bootstrap'],
