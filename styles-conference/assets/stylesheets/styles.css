@@ -541,6 +541,16 @@ textarea {
   border-radius: 12px;
 }
 
+.card_image4 {
+  width: 91%;
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  height: auto;
+  background-color: rgb(137, 184, 255);
+  border-radius: 12px;
+}
+
 .popup-img1 {
   width: 85%;
   background-color: rgb(255, 165, 165);
