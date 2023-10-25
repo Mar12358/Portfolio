@@ -38,7 +38,7 @@ function popupWindow(project) {
   togglePopUp();
   popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
   const [categ1, categ2, categ3] = project.categ;
-/*   if (project.id === 'tonic1' && window.matchMedia('(max-width: 767px)').matches) {
+  /* if (project.id === 'reserve-lectures' && window.matchMedia('(max-width: 767px)').matches) {
     popupWindowDiv.children[0].children[2].children[0].classList.add('card_image1');
   } */
   popupWindowDiv.children[0].children[1].children[0].children[0].innerHTML = categ1;
