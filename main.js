@@ -147,6 +147,21 @@ const clickSkills = () => {
 openSkills.addEventListener('click', clickSkills);
 closeSkills.addEventListener('click', clickSkills);
 
+const openTools = document.querySelector('#open-dropdown-tools');
+const closeTools = document.querySelector('#close-dropdown-tools');
+const tools = document.querySelector('#tools');
+const toolsSeparator = document.querySelector('#tools-separator');
+
+const clickTools = () => {
+  openTools.classList.toggle('display-none');
+  closeTools.classList.toggle('display-none');
+  tools.classList.toggle('display-none');
+  toolsSeparator.classList.toggle('display-none');
+};
+
+openTools.addEventListener('click', clickTools);
+closeTools.addEventListener('click', clickTools);
+
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;
 msgInput.onchange = populateStorage;
