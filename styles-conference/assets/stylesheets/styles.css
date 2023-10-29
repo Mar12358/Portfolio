@@ -577,6 +577,10 @@ textarea {
   padding: 16px;
 }
 
+.arrow-btn {
+  all: unset;
+}
+
 .invisible {
   opacity: 0;
   visibility: hidden;

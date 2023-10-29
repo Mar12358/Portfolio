@@ -102,6 +102,51 @@ function populateStorage() {
   localStorage.setItem('obj', JSON.stringify(obj));
 }
 
+const openLenguages = document.querySelector('#open-dropdown-lenguages');
+const closeLenguages = document.querySelector('#close-dropdown-lenguages');
+const lenguages = document.querySelector('#lenguages');
+const lengSeparator = document.querySelector('#lenguages-separator');
+
+const clickLenguages = () => {
+  openLenguages.classList.toggle('display-none');
+  closeLenguages.classList.toggle('display-none');
+  lenguages.classList.toggle('display-none');
+  lengSeparator.classList.toggle('display-none');
+};
+
+openLenguages.addEventListener('click', clickLenguages);
+closeLenguages.addEventListener('click', clickLenguages);
+
+const openFrameworks = document.querySelector('#open-dropdown-frameworks');
+const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
+const frameworks = document.querySelector('#frameworks');
+const frameworksSeparator = document.querySelector('#frameworks-separator');
+
+const clickFrameworks = () => {
+  openFrameworks.classList.toggle('display-none');
+  closeFrameworks.classList.toggle('display-none');
+  frameworks.classList.toggle('display-none');
+  frameworksSeparator.classList.toggle('display-none');
+};
+
+openFrameworks.addEventListener('click', clickFrameworks);
+closeFrameworks.addEventListener('click', clickFrameworks);
+
+const openSkills = document.querySelector('#open-dropdown-skills');
+const closeSkills = document.querySelector('#close-dropdown-skills');
+const skills = document.querySelector('#skills');
+const skillsSeparator = document.querySelector('#skills-separator');
+
+const clickSkills = () => {
+  openSkills.classList.toggle('display-none');
+  closeSkills.classList.toggle('display-none');
+  skills.classList.toggle('display-none');
+  skillsSeparator.classList.toggle('display-none');
+};
+
+openSkills.addEventListener('click', clickSkills);
+closeSkills.addEventListener('click', clickSkills);
+
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;
 msgInput.onchange = populateStorage;

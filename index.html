@@ -222,14 +222,14 @@
         <ul class="content_about_self2">
           <li class="list_info">
             <p>Languages</p>
-            <button id="open-dropdown-lenguages" type="button">
+            <button id="open-dropdown-lenguages" class="arrow-btn" type="button">
               <img class="arrow" src="styles-conference/assets/arrow_down.svg"/>
             </button>
-            <button id="close-dropdown-lenguages" type="button"></button>
+            <button id="close-dropdown-lenguages" class="arrow-btn display-none" type="button">
               <img class="arrow" src="styles-conference/assets/arrow_left.svg"/>
             </button>
           </li>
-          <ul class="ul_list_info">
+          <ul id="lenguages" class="ul_list_info">
             <li class="list_lang">
               <img class="lang_logo" src="styles-conference/assets/js_logo.svg"/>
               <p>JavaScript</p>
@@ -243,26 +243,55 @@
               <p>CSS</p>
             </li>
           </ul>
+          <img id="lenguages-separator" class="display-none" src="styles-conference/assets/Separator.svg" alt="separator"/> 
           <li class="list_info">
             <p>Frameworks</p>
-            <button id="open-dropdown-frameworks" type="button">
+            <button id="open-dropdown-frameworks" class="arrow-btn display-none" type="button">
               <img class="arrow" src="styles-conference/assets/arrow_down.svg"/>
             </button>
-            <button id="close-dropdown-frameworks" type="button"></button>
+            <button id="close-dropdown-frameworks" class="arrow-btn" type="button">
               <img class="arrow" src="styles-conference/assets/arrow_left.svg"/>
             </button>
           </li>
-          <img src="styles-conference/assets/Separator.svg" alt="separator"/>
+          <ul id="frameworks" class="ul_list_info display-none">
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/js_logo.svg"/>
+              <p>JavaScript</p>
+            </li>
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/html_logo.svg"/>
+              <p>HTML</p>
+            </li>
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/css_logo.svg"/>
+              <p>CSS</p>
+            </li>
+          </ul>
+          <img id="frameworks-separator" src="styles-conference/assets/Separator.svg" alt="separator"/>
           <li class="list_info">
             <p>Skills</p>
-            <button id="open-dropdown-skills" type="button">
+            <button id="open-dropdown-skills" class="arrow-btn display-none" type="button">
               <img class="arrow" src="styles-conference/assets/arrow_down.svg"/>
             </button>
-            <button id="close-dropdown-skills" type="button"></button>
+            <button id="close-dropdown-skills" class="arrow-btn" type="button">
               <img class="arrow" src="styles-conference/assets/arrow_left.svg"/>
             </button>
           </li>
-          <img src="styles-conference/assets/Separator.svg" alt="separator"/>
+          <ul id="skills" class="ul_list_info display-none">
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/js_logo.svg"/>
+              <p>JavaScript</p>
+            </li>
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/html_logo.svg"/>
+              <p>HTML</p>
+            </li>
+            <li class="list_lang">
+              <img class="lang_logo" src="styles-conference/assets/css_logo.svg"/>
+              <p>CSS</p>
+            </li>
+          </ul>
+          <img id="skills-separator" src="styles-conference/assets/Separator.svg" alt="separator"/>
         </ul>
       </div>
     </section>
