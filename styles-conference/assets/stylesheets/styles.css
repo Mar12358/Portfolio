@@ -491,7 +491,10 @@ textarea {
 }
 
 .lang_logo {
-  height: 45px;
+  max-width: 45px;
+  max-height: 45px;
+  width: auto;
+  height: auto;
 }
 
 .toggle-menu ul {
@@ -805,7 +808,7 @@ small {
 
   .ul_list_info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 41%;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .list_lang {
