@@ -490,8 +490,19 @@ textarea {
   z-index: 1;
 }
 
+.lang_logo {
+  max-width: 45px;
+  max-height: 45px;
+  width: auto;
+  height: auto;
+}
+
 .toggle-menu ul {
   margin-top: 8%;
+}
+
+.list_lang p {
+  white-space: nowrap;
 }
 
 .popup-window {
@@ -577,6 +588,10 @@ textarea {
   padding: 16px;
 }
 
+.arrow-btn {
+  all: unset;
+}
+
 .invisible {
   opacity: 0;
   visibility: hidden;
@@ -625,6 +640,10 @@ small {
 @media screen and (min-width: 768px) {
   .content {
     width: 67%;
+  }
+
+  .content_about_self {
+    justify-content: flex-start;
   }
 
   .button {
@@ -797,7 +816,7 @@ small {
 
   .ul_list_info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 41%;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .list_lang {
