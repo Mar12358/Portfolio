@@ -500,9 +500,11 @@ textarea {
 .toggle-menu ul {
   margin-top: 8%;
 }
+
 .list_lang p {
   white-space: nowrap;
 }
+
 .popup-window {
   position: absolute;
   height: 100%;
