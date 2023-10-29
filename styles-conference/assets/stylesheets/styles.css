@@ -490,6 +490,10 @@ textarea {
   z-index: 1;
 }
 
+.lang_logo {
+  height: 45px;
+}
+
 .toggle-menu ul {
   margin-top: 8%;
 }
