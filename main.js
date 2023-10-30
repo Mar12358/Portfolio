@@ -31,7 +31,7 @@ projectList.forEach((project, index) => {
   card.innerHTML = `
   <section id=${project.id}>
     <div class="card">
-      <a id="img_link_${right}" href="#"><img class="card_image card_image1" src=${project.mobileImage} alt=${project.id}/></a>
+      <a id="img_link_${right}" href="#"><img class="card_image" style="background-color: ${project.bgColor};" src=${project.mobileImage} alt=${project.id}/></a>
       <div class="card_bottom">
         <h2 class="card_title">${project.name}</h2>
         <ul class="card_ul">
