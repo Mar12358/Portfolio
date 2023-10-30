@@ -59,7 +59,13 @@ header {
   align-items: center;
   text-align: center;
   margin: 4px;
+  margin-top: 18px;
   text-decoration: none;
+}
+
+.logo-img {
+  width: 70px;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -887,9 +893,14 @@ small {
 
   .logo {
     margin-left: 5vw;
+    margin-top: 47px;
     transition-property: transform;
     transition-duration: 1.5s;
     transition-timing-function: ease-out;
+  }
+
+  .logo-img {
+    width: 110px;
   }
 
   .categories li {
@@ -928,7 +939,7 @@ small {
   }
 
   .logo:hover {
-    transform: scale(1.2) rotate(360deg);
+    transform: scale(1.2);
   }
 
   .display-none {
