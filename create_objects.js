@@ -21,7 +21,7 @@ const projectList = [
     technologies: ['Ruby on rails', 'React.js', 'Swagger', 'Tailwind CSS'],
     liveLink: 'https://github.com/Mar12358/book-an-appointment',
     sourceLink: 'https://github.com/Mar12358/book-an-appointment',
-    categ: ['Web App', 'Full Stack', '2023'],
+    categ: ['Reservations App', 'Full Stack', '2023'],
   },
   {
     id: 'space-hub',

@@ -23,15 +23,40 @@ for (let j = 0; j < menuLink.length; j += 1) {
   menuLink[j].addEventListener('click', clickMenu);
 }
 
+const work = document.querySelector('#work');
+
+projectList.forEach((project) => {
+  const card = document.createElement('section');
+  card.innerHTML = `
+  <section id=${project.id}>
+    <div class="card">
+      
+      <a href="#"><img class="card_image card_image1" src=${project.mobileImage} alt=${project.id}/></a>
+      <div class="card_bottom">
+        <h2 class="card_title">${project.name}</h2>
+        <ul class="card_ul">
+          ${project.categ.map((category) => `<li><p class="text_li">${category}</p></li><li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>`).join('')}
+        </ul>
+        <p class="description description_cards">
+          ${project.mobileDescription}
+        </p>
+        <ul class="categories">
+          ${project.technologies.map((tech) => `<li><p>${tech}</p></li>`).join('')}
+        </ul>
+        <a class="see_project_button" href="#">See project</a>
+      </div>
+    </div>
+  </section>`;
+  work.appendChild(card);
+});
+
 const popupWindowDiv = document.querySelector('.popup-window');
 
 function togglePopUp() {
   welcomePage.classList.toggle('blend-mode');
   popupWindowDiv.classList.toggle('visible');
   popupWindowDiv.classList.toggle('invisible');
-  for (let i = 0; i < restOfPage.length; i += 1) {
-    restOfPage[i].classList.toggle('display-none');
-  }
+  restOfPage.forEach((page) => page.classList.toggle('display-none'));
 }
 
 function popupWindow(project) {
