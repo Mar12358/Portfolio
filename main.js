@@ -25,13 +25,13 @@ for (let j = 0; j < menuLink.length; j += 1) {
 
 const work = document.querySelector('#work');
 
-projectList.forEach((project) => {
+projectList.forEach((project, index) => {
   const card = document.createElement('section');
+  const right = index % 2 !== 0 ? 'right' : '';
   card.innerHTML = `
   <section id=${project.id}>
     <div class="card">
-      
-      <a href="#"><img class="card_image card_image1" src=${project.mobileImage} alt=${project.id}/></a>
+      <a id="img_link_${right}" href="#"><img class="card_image card_image1" src=${project.mobileImage} alt=${project.id}/></a>
       <div class="card_bottom">
         <h2 class="card_title">${project.name}</h2>
         <ul class="card_ul">
