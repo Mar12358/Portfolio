@@ -156,14 +156,14 @@ const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
 const frameworks = document.querySelector('#frameworks');
 const frameworksSeparator = document.querySelector('#frameworks-separator');
 
-skillsList.frameworks.forEach((framework) => {
+skillsList.frameworks.forEach((skill) => {
   const li = document.createElement('li');
   li.classList = 'list_lang';
   li.innerHTML = `
   <div class="logo-container">
-    <img class="lang_logo" src="styles-conference/assets/${framework.asset}"/>
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
   </div>
-  <p>${framework.language}</p>`;
+  <p>${skill.framework}</p>`;
   frameworks.appendChild(li);
 });
 
@@ -196,6 +196,17 @@ const openTools = document.querySelector('#open-dropdown-tools');
 const closeTools = document.querySelector('#close-dropdown-tools');
 const tools = document.querySelector('#tools');
 const toolsSeparator = document.querySelector('#tools-separator');
+
+skillsList.tools.forEach((skill) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+  </div>
+  <p>${skill.tool}</p>`;
+  tools.appendChild(li);
+});
 
 const clickTools = () => {
   openTools.classList.toggle('display-none');
