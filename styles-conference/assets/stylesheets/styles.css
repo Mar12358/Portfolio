@@ -33,14 +33,28 @@ body {
 header {
   /* HEADER CONTAINER */
   display: flex;
-  height: 48px;
+  height: 65px;
   justify-content: space-between;
-  margin-left: 8%;
+  padding-left: 8%;
+  padding-right: 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Add your desired background color */
+  z-index: 100; /* Ensure it's above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 .menu {
-  margin-top: 9px;
-  height: 17px;
+  display: flex;
+  align-items: center;
+
+}
+
+#menu-button {
+  width: 32px;
 }
 
 .mobile-menu_link {
@@ -51,15 +65,19 @@ header {
   font-weight: 600;
 }
 
+
+
+
+
 .logo {
   color: #6070ff;
   font-weight: 700;
   font-size: 18px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 4px;
-  margin-top: 18px;
+  
   text-decoration: none;
 }
 
@@ -140,6 +158,7 @@ li {
 }
 
 .welcome_content {
+  margin-top: 65px;
   height: 604px;
 }
 
@@ -690,6 +709,7 @@ small {
 
   header {
     width: 100%;
+    height: 85px;
   }
 
   .card {
@@ -734,7 +754,6 @@ small {
     float: right;
     display: flex;
     margin-right: 15vw;
-    margin-top: 7px;
     gap: 15px;
   }
 
@@ -852,7 +871,6 @@ small {
 
   .logo {
     margin-left: 5vw;
-    margin-top: 47px;
     transition-property: transform;
     transition-duration: 1.5s;
     transition-timing-function: ease-out;
@@ -904,4 +922,16 @@ small {
   .display-none {
     display: none;
   }
+
+  .menu_link:visited {
+    color: #6070ff;
+  }
+  .menu_link:hover {
+    
+    color: #ff6600;
+    box-shadow: 0 2px #ff6600a8;
+  }
+  
+
+  
 }
