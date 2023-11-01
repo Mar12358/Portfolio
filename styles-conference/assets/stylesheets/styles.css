@@ -334,6 +334,7 @@ li {
 
 #menu_list {
   visibility: hidden;
+  display: none;
 }
 
 .content_about_self2 {
@@ -452,6 +453,7 @@ textarea {
   transform: scale(1.1);
   background-color: #8793ff;
   color: #fff;
+  cursor: pointer;
 }
 
 .see_project_button:disabled,
@@ -502,10 +504,6 @@ textarea {
   background-color: #6070ff;
   mix-blend-mode: multiply;
   z-index: 1;
-}
-
-#menu_list {
-  display: none;
 }
 
 .lang_logo {
@@ -750,7 +748,6 @@ small {
   #menu_list {
     visibility: visible;
     display: flex;
-    margin-right: 15vw;
     gap: 15px;
   }
 
@@ -838,6 +835,7 @@ small {
 
   .welcome_content {
     height: 70vw;
+    margin-top: 85px;
   }
 
   .list_info {
@@ -867,7 +865,6 @@ small {
   }
 
   .logo {
-    margin-left: 5vw;
     transition-property: transform;
     transition-duration: 1.5s;
     transition-timing-function: ease-out;
@@ -927,5 +924,18 @@ small {
   .menu_link:hover {
     color: #f60;
     box-shadow: 0 2px #ff6600a8;
+  }
+
+  .arrow-btn,
+  .social {
+    transition-property: transform, filter;
+    transition-duration: 0.5s;
+  }
+
+  .arrow-btn:hover,
+  .social:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    filter: contrast(200%) hue-rotate(100deg);
   }
 }
