@@ -35,8 +35,6 @@ header {
   display: flex;
   height: 65px;
   justify-content: space-between;
-  padding-left: 8%;
-  padding-right: 4%;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,6 +47,7 @@ header {
 .menu {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #menu-button {
@@ -68,6 +67,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   display: flex;
+  padding-left: 6%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -81,6 +81,7 @@ header {
 
 .nav-bar {
   display: flex;
+  padding-right: 6%;
 }
 
 .logo,
@@ -503,6 +504,10 @@ textarea {
   z-index: 1;
 }
 
+#menu_list {
+  display: none;
+}
+
 .lang_logo {
   max-width: 45px;
   max-height: 45px;
@@ -572,7 +577,7 @@ textarea {
 
 .invisible {
   opacity: 0;
-  visibility: hidden;
+  display: none;
   transition: opacity 0.5s ease-out, visibility 0s 2s;
 }
 
@@ -744,7 +749,6 @@ small {
 
   #menu_list {
     visibility: visible;
-    float: right;
     display: flex;
     margin-right: 15vw;
     gap: 15px;
