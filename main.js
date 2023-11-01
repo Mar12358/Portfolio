@@ -1,8 +1,10 @@
+/* global $ */
+
 import projectList from './create_objects.js';
 import skillsList from './skills.js';
 
 const welcomePage = document.querySelector('#welcome');
-const ham = document.querySelector('#menu-button');
+
 let menuList = document.querySelector('.toggle-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
 
@@ -15,7 +17,9 @@ function clickMenu() {
   }
 }
 
-ham.addEventListener('click', clickMenu);
+$(document).ready(() => {
+  $('#menu-button').click(clickMenu);
+});
 
 restOfPage = document.querySelectorAll('.toggle-section');
 menuList = document.querySelector('.toggle-menu');
@@ -125,31 +129,32 @@ function populateStorage() {
   localStorage.setItem('obj', JSON.stringify(obj));
 }
 
-const openLanguages = document.querySelector('#open-dropdown-languages');
-const closeLanguages = document.querySelector('#close-dropdown-languages');
-const languages = document.querySelector('#languages');
-const lengSeparator = document.querySelector('#languages-separator');
+$(document).ready(() => {
+  const openLanguages = $('#open-dropdown-languages');
+  const closeLanguages = $('#close-dropdown-languages');
+  const languages = $('#languages');
+  const lengSeparator = $('#languages-separator');
 
-skillsList.languages.forEach((skill) => {
-  const li = document.createElement('li');
-  li.classList = 'list_lang';
-  li.innerHTML = `
-  <div class="logo-container">
-    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
-  </div>
-  <p>${skill.language}</p>`;
-  languages.appendChild(li);
+  $.each(skillsList.languages, (index, skill) => {
+    const li = $('<li>').addClass('list_lang').html(`
+      <div class="logo-container">
+        <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+      </div>
+      <p>${skill.language}</p>
+    `);
+    languages.append(li);
+  });
+
+  const clickLanguages = () => {
+    openLanguages.toggleClass('display-none');
+    closeLanguages.toggleClass('display-none');
+    languages.toggleClass('display-none');
+    lengSeparator.toggleClass('display-none');
+  };
+
+  openLanguages.click(clickLanguages);
+  closeLanguages.click(clickLanguages);
 });
-
-const clickLanguages = () => {
-  openLanguages.classList.toggle('display-none');
-  closeLanguages.classList.toggle('display-none');
-  languages.classList.toggle('display-none');
-  lengSeparator.classList.toggle('display-none');
-};
-
-openLanguages.addEventListener('click', clickLanguages);
-closeLanguages.addEventListener('click', clickLanguages);
 
 const openFrameworks = document.querySelector('#open-dropdown-frameworks');
 const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
