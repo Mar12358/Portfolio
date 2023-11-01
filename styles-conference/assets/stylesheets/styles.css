@@ -466,11 +466,6 @@ textarea {
   background-color: white;
 }
 
-.card_image {
-  width: 100%;
-  height: auto;
-}
-
 .title_popup-card,
 .card_buttons {
   display: flex;
@@ -522,10 +517,6 @@ textarea {
   align-items: center;
 }
 
-.popup-img {
-  width: 100%;
-}
-
 .card_image {
   width: 91%;
   padding: 4%;
@@ -541,22 +532,6 @@ textarea {
   padding-top: 4%;
   padding-bottom: 4%;
   height: auto;
-}
-
-.popup-img1 {
-  width: 85%;
-  background-color: rgb(255, 165, 165);
-  padding: 4%;
-  padding-top: 8%;
-  padding-bottom: 8%;
-}
-
-.popup-img2 {
-  width: 85%;
-  background-color: rgb(181, 211, 255);
-  padding: 4%;
-  padding-top: 9%;
-  padding-bottom: 9%;
 }
 
 .popup-card {
