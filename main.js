@@ -31,7 +31,7 @@ projectList.forEach((project, index) => {
   card.innerHTML = `
   <section id=${project.id}>
     <div class="card">
-      <a id="img_link_${right}" href="#"><img class="card_image" style="background-color: ${project.bgColor};" src=${project.mobileImage} alt=${project.id}/></a>
+      <a id="img_link_${right}" href="#"><img class="card_image" style="background-color: ${project.bgColor};" src=${project.mobileImage} alt=${project.id}></a>
       <div class="card_bottom">
         <h2 class="card_title">${project.name}</h2>
         <ul class="card_ul">
@@ -63,13 +63,11 @@ function popupWindow(project) {
   togglePopUp();
   popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
   const [categ1, categ2, categ3] = project.categ;
-  /* if (project.id === 'reserve-lectures' && window.matchMedia('(max-width: 767px)').matches) {
-    popupWindowDiv.children[0].children[2].children[0].classList.add('card_image1');
-  } */
   popupWindowDiv.children[0].children[1].children[0].children[0].innerHTML = categ1;
   popupWindowDiv.children[0].children[1].children[2].children[0].innerHTML = categ2;
   popupWindowDiv.children[0].children[1].children[4].children[0].innerHTML = categ3;
   popupWindowDiv.children[0].children[2].children[0].src = project.mobileImage;
+  popupWindowDiv.children[0].children[2].children[0].style = `background-color: ${project.bgColor}`;
   popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
   popupWindowDiv.children[0].children[4].innerHTML = `<li><p>${project.technologies[0]}</p></li>`;
   popupWindowDiv.children[0].children[8].children[0].href = project.liveLink;
@@ -85,7 +83,6 @@ function popupWindow(project) {
     popupWindowDiv.children[0].children[4].insertAdjacentHTML('beforeend', `<li><p>${project.technologies[i]}</p></li>`);
   }
 }
-
 const projects = document.querySelectorAll('.card_image');
 const buttons = document.querySelectorAll('.see_project_button');
 for (let i = 0; i < buttons.length; i += 1) {

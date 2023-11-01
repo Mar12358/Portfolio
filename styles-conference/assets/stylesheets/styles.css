@@ -532,8 +532,15 @@ textarea {
   padding-top: 8%;
   padding-bottom: 8%;
   height: auto;
-  background-color: rgb(255, 188, 188);
   border-radius: 12px;
+}
+
+.popup-img {
+  width: 91%;
+  padding: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  height: auto;
 }
 
 .popup-img1 {
