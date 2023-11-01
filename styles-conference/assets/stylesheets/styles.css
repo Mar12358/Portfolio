@@ -43,14 +43,12 @@ header {
   width: 100%;
   background-color: #fff; /* Add your desired background color */
   z-index: 100; /* Ensure it's above other content */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .menu {
   display: flex;
   align-items: center;
-
 }
 
 #menu-button {
@@ -65,10 +63,6 @@ header {
   font-weight: 600;
 }
 
-
-
-
-
 .logo {
   color: #6070ff;
   font-weight: 700;
@@ -77,7 +71,6 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
   text-decoration: none;
 }
 
@@ -926,12 +919,9 @@ small {
   .menu_link:visited {
     color: #6070ff;
   }
+
   .menu_link:hover {
-    
-    color: #ff6600;
+    color: #f60;
     box-shadow: 0 2px #ff6600a8;
   }
-  
-
-  
 }
