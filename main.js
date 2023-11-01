@@ -156,6 +156,17 @@ const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
 const frameworks = document.querySelector('#frameworks');
 const frameworksSeparator = document.querySelector('#frameworks-separator');
 
+skillsList.frameworks.forEach((framework) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${framework.asset}"/>
+  </div>
+  <p>${framework.language}</p>`;
+  frameworks.appendChild(li);
+});
+
 const clickFrameworks = () => {
   openFrameworks.classList.toggle('display-none');
   closeFrameworks.classList.toggle('display-none');
