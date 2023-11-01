@@ -1,4 +1,5 @@
 import projectList from './create_objects.js';
+import skillsList from './skills.js';
 
 const welcomePage = document.querySelector('#welcome');
 const ham = document.querySelector('#menu-button');
@@ -124,20 +125,31 @@ function populateStorage() {
   localStorage.setItem('obj', JSON.stringify(obj));
 }
 
-const openLenguages = document.querySelector('#open-dropdown-lenguages');
-const closeLenguages = document.querySelector('#close-dropdown-lenguages');
-const lenguages = document.querySelector('#lenguages');
-const lengSeparator = document.querySelector('#lenguages-separator');
+const openLanguages = document.querySelector('#open-dropdown-languages');
+const closeLanguages = document.querySelector('#close-dropdown-languages');
+const languages = document.querySelector('#languages');
+const lengSeparator = document.querySelector('#languages-separator');
 
-const clickLenguages = () => {
-  openLenguages.classList.toggle('display-none');
-  closeLenguages.classList.toggle('display-none');
-  lenguages.classList.toggle('display-none');
+skillsList.languages.forEach((skill) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+  </div>
+  <p>${skill.language}</p>`;
+  languages.appendChild(li);
+});
+
+const clickLanguages = () => {
+  openLanguages.classList.toggle('display-none');
+  closeLanguages.classList.toggle('display-none');
+  languages.classList.toggle('display-none');
   lengSeparator.classList.toggle('display-none');
 };
 
-openLenguages.addEventListener('click', clickLenguages);
-closeLenguages.addEventListener('click', clickLenguages);
+openLanguages.addEventListener('click', clickLanguages);
+closeLanguages.addEventListener('click', clickLanguages);
 
 const openFrameworks = document.querySelector('#open-dropdown-frameworks');
 const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
