@@ -949,10 +949,10 @@ small {
 
   @keyframes shake {
     0% { transform: translate(0, 0); }
-    20% { transform: translate(1px, -1px); } /* Movimiento hacia arriba y a la derecha */
-    40% { transform: translate(-1px, 1px); } /* Movimiento hacia abajo y a la izquierda */
-    60% { transform: translate(1px, -1px); } /* Movimiento hacia arriba y a la derecha */
-    80% { transform: translate(-1px, 1px); } /* Movimiento hacia abajo y a la izquierda */
-    100% { transform: translate(1px, -1px); } /* Movimiento hacia arriba y a la derecha */
+    20% { transform: translate(1px, -1px); }
+    40% { transform: translate(-1px, 1px); }
+    60% { transform: translate(1px, -1px); }
+    80% { transform: translate(-1px, 1px); }
+    100% { transform: translate(1px, -1px); }
   }
 }
