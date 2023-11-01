@@ -10,6 +10,7 @@ const projectList = [
     liveLink: 'https://mar12358.github.io/capstone-lh',
     sourceLink: 'https://github.com/Mar12358/capstone-lh',
     categ: ['Web App', 'Front-end', '2023'],
+    bgColor: 'rgb(255, 188, 188)',
   },
   {
     id: 'reserve-lectures',
@@ -21,7 +22,8 @@ const projectList = [
     technologies: ['Ruby on rails', 'React.js', 'Swagger', 'Tailwind CSS'],
     liveLink: 'https://github.com/Mar12358/book-an-appointment',
     sourceLink: 'https://github.com/Mar12358/book-an-appointment',
-    categ: ['Web App', 'Full Stack', '2023'],
+    categ: ['Reservations App', 'Full Stack', '2023'],
+    bgColor: 'rgb(208, 255, 199)',
   },
   {
     id: 'space-hub',
@@ -34,6 +36,7 @@ const projectList = [
     liveLink: 'https://space-travelers-hub-cz9s.onrender.com',
     sourceLink: 'https://github.com/Bifabig/space-travelers-hub-react-redux',
     categ: ['Web App', 'Front-end', '2023'],
+    bgColor: 'rgb(207, 226, 255)',
   },
   {
     id: 'recipe-app',
@@ -46,6 +49,7 @@ const projectList = [
     liveLink: 'https://recipe-app-onhi.onrender.com',
     sourceLink: 'https://github.com/Mar12358/Recipe-App',
     categ: ['Web App', 'Full Stack', '2023'],
+    bgColor: 'rgb(137, 184, 255)',
   },
 ];
 
