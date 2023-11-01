@@ -182,6 +182,17 @@ const closeSkills = document.querySelector('#close-dropdown-skills');
 const skills = document.querySelector('#skills');
 const skillsSeparator = document.querySelector('#skills-separator');
 
+skillsList.skills.forEach((skill) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+  </div>
+  <p>${skill.skill}</p>`;
+  skills.appendChild(li);
+});
+
 const clickSkills = () => {
   openSkills.classList.toggle('display-none');
   closeSkills.classList.toggle('display-none');
