@@ -498,6 +498,14 @@ textarea {
   height: auto;
 }
 
+.logo-container {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .toggle-menu ul {
   margin-top: 8%;
 }
