@@ -1,7 +1,10 @@
+/* global $ */
+
 import projectList from './create_objects.js';
+import skillsList from './skills.js';
 
 const welcomePage = document.querySelector('#welcome');
-const ham = document.querySelector('#menu-button');
+
 let menuList = document.querySelector('.toggle-menu');
 let restOfPage = document.querySelectorAll('.toggle-section');
 
@@ -14,7 +17,9 @@ function clickMenu() {
   }
 }
 
-ham.addEventListener('click', clickMenu);
+$(document).ready(() => {
+  $('#menu-button').click(clickMenu);
+});
 
 restOfPage = document.querySelectorAll('.toggle-section');
 menuList = document.querySelector('.toggle-menu');
@@ -23,28 +28,51 @@ for (let j = 0; j < menuLink.length; j += 1) {
   menuLink[j].addEventListener('click', clickMenu);
 }
 
+const work = document.querySelector('#work');
+
+projectList.forEach((project, index) => {
+  const card = document.createElement('section');
+  const right = index % 2 !== 0 ? 'right' : '';
+  card.innerHTML = `
+  <section id=${project.id}>
+    <div class="card">
+      <a id="img_link_${right}" href="#"><img class="card_image" style="background-color: ${project.bgColor};" src=${project.mobileImage} alt=${project.id}></a>
+      <div class="card_bottom">
+        <h2 class="card_title">${project.name}</h2>
+        <ul class="card_ul">
+          ${project.categ.map((category) => `<li><p class="text_li">${category}</p></li><li><img class="counter" src="styles-conference/assets/Counter.svg" alt="counter"/></li>`).join('')}
+        </ul>
+        <p class="description description_cards">
+          ${project.mobileDescription}
+        </p>
+        <ul class="categories">
+          ${project.technologies.map((tech) => `<li><p>${tech}</p></li>`).join('')}
+        </ul>
+        <a class="see_project_button" href="#">See project</a>
+      </div>
+    </div>
+  </section>`;
+  work.appendChild(card);
+});
+
 const popupWindowDiv = document.querySelector('.popup-window');
 
 function togglePopUp() {
   welcomePage.classList.toggle('blend-mode');
   popupWindowDiv.classList.toggle('visible');
   popupWindowDiv.classList.toggle('invisible');
-  for (let i = 0; i < restOfPage.length; i += 1) {
-    restOfPage[i].classList.toggle('display-none');
-  }
+  restOfPage.forEach((page) => page.classList.toggle('display-none'));
 }
 
 function popupWindow(project) {
   togglePopUp();
   popupWindowDiv.children[0].children[0].children[0].innerHTML = project.name;
   const [categ1, categ2, categ3] = project.categ;
-/*   if (project.id === 'tonic1' && window.matchMedia('(max-width: 767px)').matches) {
-    popupWindowDiv.children[0].children[2].children[0].classList.add('card_image1');
-  } */
   popupWindowDiv.children[0].children[1].children[0].children[0].innerHTML = categ1;
   popupWindowDiv.children[0].children[1].children[2].children[0].innerHTML = categ2;
   popupWindowDiv.children[0].children[1].children[4].children[0].innerHTML = categ3;
   popupWindowDiv.children[0].children[2].children[0].src = project.mobileImage;
+  popupWindowDiv.children[0].children[2].children[0].style = `background-color: ${project.bgColor}`;
   popupWindowDiv.children[0].children[3].innerHTML = project.mobileDescription;
   popupWindowDiv.children[0].children[4].innerHTML = `<li><p>${project.technologies[0]}</p></li>`;
   popupWindowDiv.children[0].children[8].children[0].href = project.liveLink;
@@ -60,7 +88,6 @@ function popupWindow(project) {
     popupWindowDiv.children[0].children[4].insertAdjacentHTML('beforeend', `<li><p>${project.technologies[i]}</p></li>`);
   }
 }
-
 const projects = document.querySelectorAll('.card_image');
 const buttons = document.querySelectorAll('.see_project_button');
 for (let i = 0; i < buttons.length; i += 1) {
@@ -101,6 +128,111 @@ function populateStorage() {
   const obj = { name: nameInput.value, email: emailInput.value, msg: msgInput.value };
   localStorage.setItem('obj', JSON.stringify(obj));
 }
+
+$(document).ready(() => {
+  const openLanguages = $('#open-dropdown-languages');
+  const closeLanguages = $('#close-dropdown-languages');
+  const languages = $('#languages');
+  const lengSeparator = $('#languages-separator');
+
+  $.each(skillsList.languages, (index, skill) => {
+    const li = $('<li>').addClass('list_lang').html(`
+      <div class="logo-container">
+        <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+      </div>
+      <p>${skill.language}</p>
+    `);
+    languages.append(li);
+  });
+
+  const clickLanguages = () => {
+    openLanguages.toggleClass('display-none');
+    closeLanguages.toggleClass('display-none');
+    languages.toggleClass('display-none');
+    lengSeparator.toggleClass('display-none');
+  };
+
+  openLanguages.click(clickLanguages);
+  closeLanguages.click(clickLanguages);
+});
+
+const openFrameworks = document.querySelector('#open-dropdown-frameworks');
+const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
+const frameworks = document.querySelector('#frameworks');
+const frameworksSeparator = document.querySelector('#frameworks-separator');
+
+skillsList.frameworks.forEach((skill) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+  </div>
+  <p>${skill.framework}</p>`;
+  frameworks.appendChild(li);
+});
+
+const clickFrameworks = () => {
+  openFrameworks.classList.toggle('display-none');
+  closeFrameworks.classList.toggle('display-none');
+  frameworks.classList.toggle('display-none');
+  frameworksSeparator.classList.toggle('display-none');
+};
+
+openFrameworks.addEventListener('click', clickFrameworks);
+closeFrameworks.addEventListener('click', clickFrameworks);
+
+const openSkills = document.querySelector('#open-dropdown-skills');
+const closeSkills = document.querySelector('#close-dropdown-skills');
+const skills = document.querySelector('#skills');
+const skillsSeparator = document.querySelector('#skills-separator');
+
+skillsList.skills.forEach((skill) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+  </div>
+  <p>${skill.skill}</p>`;
+  skills.appendChild(li);
+});
+
+const clickSkills = () => {
+  openSkills.classList.toggle('display-none');
+  closeSkills.classList.toggle('display-none');
+  skills.classList.toggle('display-none');
+  skillsSeparator.classList.toggle('display-none');
+};
+
+openSkills.addEventListener('click', clickSkills);
+closeSkills.addEventListener('click', clickSkills);
+
+const openTools = document.querySelector('#open-dropdown-tools');
+const closeTools = document.querySelector('#close-dropdown-tools');
+const tools = document.querySelector('#tools');
+const toolsSeparator = document.querySelector('#tools-separator');
+
+skillsList.tools.forEach((skill) => {
+  const li = document.createElement('li');
+  li.classList = 'list_lang';
+  li.innerHTML = `
+  <div class="logo-container">
+    <img class="lang_logo" src="styles-conference/assets/${skill.asset}"/>
+  </div>
+  <p>${skill.tool}</p>`;
+  tools.appendChild(li);
+});
+
+const clickTools = () => {
+  openTools.classList.toggle('display-none');
+  closeTools.classList.toggle('display-none');
+  tools.classList.toggle('display-none');
+  toolsSeparator.classList.toggle('display-none');
+};
+
+openTools.addEventListener('click', clickTools);
+closeTools.addEventListener('click', clickTools);
 
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;
