@@ -5,6 +5,18 @@ const skills = {
       asset: 'ruby_logo.svg',
     },
     {
+      language: 'Java',
+      asset: 'java_logo.svg',
+    },
+    {
+      language: 'Go',
+      asset: 'go_logo.svg',
+    },
+    {
+      language: 'Python',
+      asset: 'python_logo.svg',
+    },
+    {
       language: 'JavaScript',
       asset: 'js_logo.png',
     },
