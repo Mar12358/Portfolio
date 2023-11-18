@@ -498,7 +498,7 @@ textarea {
 }
 
 .toggle-menu {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   background-color: #6070ff;
@@ -558,6 +558,7 @@ textarea {
 }
 
 .popup-card {
+  position: fixed;
   height: 86%;
   width: 81%;
   background-color: #fff;
