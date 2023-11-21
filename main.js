@@ -4,31 +4,34 @@ import projectList from './create_objects.js';
 import skillsList from './skills.js';
 
 const welcomePage = document.querySelector('#welcome');
-
-let menuList = document.querySelector('.toggle-menu');
-let restOfPage = document.querySelectorAll('.toggle-section');
+const work = document.querySelector('#work');
+const about = document.querySelector('#about');
+const contact = document.querySelector('#contact_section');
+const menuList = document.querySelector('.toggle-menu');
+// const restOfPage = document.querySelectorAll('.toggle-section');
 
 function clickMenu() {
   welcomePage.classList.toggle('blend-mode');
+  work.classList.toggle('blend-mode');
+  about.classList.toggle('blend-mode');
+  contact.classList.toggle('blend-mode');
   menuList.classList.toggle('visible');
   menuList.classList.toggle('invisible');
-  for (let i = 0; i < restOfPage.length; i += 1) {
+  /*  for (let i = 0; i < restOfPage.length; i += 1) {
     restOfPage[i].classList.toggle('display-none');
-  }
+  } */
 }
 
 $(document).ready(() => {
   $('#menu-button').click(clickMenu);
 });
 
-restOfPage = document.querySelectorAll('.toggle-section');
-menuList = document.querySelector('.toggle-menu');
 const menuLink = document.querySelectorAll('.mobile-menu_link');
 for (let j = 0; j < menuLink.length; j += 1) {
   menuLink[j].addEventListener('click', clickMenu);
 }
 
-const work = document.querySelector('#work');
+// const work = document.querySelector('#work');
 
 projectList.forEach((project, index) => {
   const card = document.createElement('section');
@@ -36,7 +39,7 @@ projectList.forEach((project, index) => {
   card.innerHTML = `
   <section id=${project.id}>
     <div class="card">
-      <a id="img_link_${right}" href="#"><img class="card_image" style="background-color: ${project.bgColor};" src=${project.mobileImage} alt=${project.id}></a>
+      <a id="img_link_${right}"><img class="card_image" style="background-color: ${project.bgColor};" src=${project.mobileImage} alt=${project.id}></a>
       <div class="card_bottom">
         <h2 class="card_title">${project.name}</h2>
         <ul class="card_ul">
@@ -48,7 +51,7 @@ projectList.forEach((project, index) => {
         <ul class="categories">
           ${project.technologies.map((tech) => `<li><p>${tech}</p></li>`).join('')}
         </ul>
-        <a class="see_project_button" href="#">See project</a>
+        <a class="see_project_button">See project</a>
       </div>
     </div>
   </section>`;
@@ -59,9 +62,12 @@ const popupWindowDiv = document.querySelector('.popup-window');
 
 function togglePopUp() {
   welcomePage.classList.toggle('blend-mode');
+  work.classList.toggle('blend-mode');
+  about.classList.toggle('blend-mode');
+  contact.classList.toggle('blend-mode');
   popupWindowDiv.classList.toggle('visible');
   popupWindowDiv.classList.toggle('invisible');
-  restOfPage.forEach((page) => page.classList.toggle('display-none'));
+  // restOfPage.forEach((page) => page.classList.toggle('display-none'));
 }
 
 function popupWindow(project) {
