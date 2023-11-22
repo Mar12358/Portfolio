@@ -140,6 +140,7 @@ $(document).ready(() => {
   const closeLanguages = $('#close-dropdown-languages');
   const languages = $('#languages');
   const lengSeparator = $('#languages-separator');
+  const languagesTitle = $('#languages-title');
 
   $.each(skillsList.languages, (index, skill) => {
     const li = $('<li>').addClass('list_lang').html(`
@@ -158,14 +159,14 @@ $(document).ready(() => {
     lengSeparator.toggleClass('display-none');
   };
 
-  openLanguages.click(clickLanguages);
-  closeLanguages.click(clickLanguages);
+  languagesTitle.click(clickLanguages);
 });
 
 const openFrameworks = document.querySelector('#open-dropdown-frameworks');
 const closeFrameworks = document.querySelector('#close-dropdown-frameworks');
 const frameworks = document.querySelector('#frameworks');
 const frameworksSeparator = document.querySelector('#frameworks-separator');
+const frameworksTitle = document.querySelector('#frameworks-title');
 
 skillsList.frameworks.forEach((skill) => {
   const li = document.createElement('li');
@@ -185,13 +186,13 @@ const clickFrameworks = () => {
   frameworksSeparator.classList.toggle('display-none');
 };
 
-openFrameworks.addEventListener('click', clickFrameworks);
-closeFrameworks.addEventListener('click', clickFrameworks);
+frameworksTitle.addEventListener('click', clickFrameworks);
 
 const openSkills = document.querySelector('#open-dropdown-skills');
 const closeSkills = document.querySelector('#close-dropdown-skills');
 const skills = document.querySelector('#skills');
 const skillsSeparator = document.querySelector('#skills-separator');
+const skillsTitle = document.querySelector('#skills-title');
 
 skillsList.skills.forEach((skill) => {
   const li = document.createElement('li');
@@ -211,14 +212,13 @@ const clickSkills = () => {
   skillsSeparator.classList.toggle('display-none');
 };
 
-openSkills.addEventListener('click', clickSkills);
-closeSkills.addEventListener('click', clickSkills);
+skillsTitle.addEventListener('click', clickSkills);
 
 const openTools = document.querySelector('#open-dropdown-tools');
 const closeTools = document.querySelector('#close-dropdown-tools');
 const tools = document.querySelector('#tools');
 const toolsSeparator = document.querySelector('#tools-separator');
-
+const toolsTitle = document.querySelector('#tools-title');
 skillsList.tools.forEach((skill) => {
   const li = document.createElement('li');
   li.classList = 'list_lang';
@@ -237,8 +237,7 @@ const clickTools = () => {
   toolsSeparator.classList.toggle('display-none');
 };
 
-openTools.addEventListener('click', clickTools);
-closeTools.addEventListener('click', clickTools);
+toolsTitle.addEventListener('click', clickTools);
 
 nameInput.onchange = populateStorage;
 emailInput.onchange = populateStorage;

@@ -441,6 +441,15 @@ textarea {
   margin-top: 18px;
 }
 
+.card_image {
+  width: 91%;
+  padding: 4%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  height: auto;
+  border-radius: 12px;
+}
+
 .see_project_button:hover,
 .get_resume_button:hover,
 .card_button:hover,
@@ -545,15 +554,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.card_image {
-  width: 91%;
-  padding: 4%;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  height: auto;
-  border-radius: 12px;
 }
 
 .popup-img {
@@ -849,10 +849,6 @@ small {
     margin-top: 85px;
   }
 
-  .list_info {
-    width: 95%;
-  }
-
   #ruby_categorie {
     visibility: visible;
     position: static;
@@ -937,15 +933,32 @@ small {
     box-shadow: 0 2px #ff6600a8;
   }
 
-  .arrow-btn {
-    transition-property: transform, filter;
+  .list_info {
+    width: 95%;
+    transition-property: filter;
     transition-duration: 0.5s;
   }
 
-  .arrow-btn:hover {
+  .list_info:hover {
     cursor: pointer;
-    transform: scale(1.3);
     filter: contrast(200%) hue-rotate(100deg);
+  }
+
+  .list_info p {
+    transform-origin: left;
+  }
+
+  .list_info p,
+  .list_info .arrow-btn {
+    transition: transform 0.5s;
+  }
+
+  .list_info:hover p {
+    transform: scale(1.15);
+  }
+
+  .list_info:hover .arrow-btn {
+    transform: scale(1.3);
   }
 
   .social {
