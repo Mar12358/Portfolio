@@ -443,10 +443,17 @@ textarea {
 
 .see_project_button:hover,
 .get_resume_button:hover,
-.card_button:hover {
+.card_button:hover,
+.card_image:hover {
+  cursor: pointer;
   transform: scale(1.1);
   background-color: #6070ff;
   color: #fff;
+}
+
+.imgButtonClose:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .submit_button:hover {
@@ -675,7 +682,7 @@ small {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: auto;
     overflow: hidden;
   }
 
@@ -684,8 +691,11 @@ small {
   }
 
   .popup-card {
+    position: fixed;
     width: 80%;
-    height: 88%;
+    top: 5%;
+    bottom: 5%;
+    height: auto;
     display: grid;
     border-radius: 2vw;
     grid-template-columns: auto auto auto;
